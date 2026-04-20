@@ -9916,6 +9916,26 @@
         "digital-strategy"
       ],
       "path": "wiki/synthesized/platform-vs-merchant-model-ecommerce.md"
+    },
+    "digital-transformation-4-module-course-outline": {
+      "type": "synthesized",
+      "title": "Digital Transformation: 4-Module Course Outline (68-Minute Architecture)",
+      "aliases": [
+        "Digital Transformation Course Outline",
+        "4-Module Digital Transformation Course",
+        "68-Minute Digital Transformation Course"
+      ],
+      "tags": [
+        "course-design",
+        "digital-transformation",
+        "curriculum",
+        "framework",
+        "business-strategy",
+        "venkatraman",
+        "gupta",
+        "learning-design"
+      ],
+      "path": "wiki/synthesized/digital-transformation-4-module-course-outline.md"
     }
   },
   "edges": [
@@ -20273,6 +20293,36 @@
       "from": "platform-vs-merchant-model-ecommerce",
       "to": "network-effects",
       "type": "related"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "the-digital-matrix-framework",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "stub-driving-digital-strategy-a-guide-to-reimagining-your-1",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "stub-the-digital-matrix-new-rules-for-business-transformation-1",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "digital-matrix",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "three-winning-moves",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "three-phases-of-transformation",
+      "type": "extends"
     }
   ]
 }

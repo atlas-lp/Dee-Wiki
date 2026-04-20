@@ -796,3 +796,5 @@ Master catalog — 774 pages · last rebuilt 2026-04-17
 - [[synthesized/digital-transformation-roi-measurement-architecture|Digital Transformation ROI: A Four-Layer Measurement Architecture]] — synthesized from query
 
 - [[synthesized/platform-vs-merchant-model-ecommerce|Platform vs. Merchant Models in E-Commerce: A Six-Dimensional Comparison]] — synthesized from query
+
+- [[synthesized/digital-transformation-4-module-course-outline|Digital Transformation: 4-Module Course Outline (68-Minute Architecture)]] — synthesized from query
