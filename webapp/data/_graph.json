@@ -9900,6 +9900,22 @@
         "network-effects"
       ],
       "path": "wiki/synthesized/digital-transformation-roi-measurement-architecture.md"
+    },
+    "platform-vs-merchant-model-ecommerce": {
+      "type": "synthesized",
+      "title": "Platform vs. Merchant Models in E-Commerce: A Six-Dimensional Comparison",
+      "aliases": [
+        "platform-merchant-distinction",
+        "ecommerce-model-comparison"
+      ],
+      "tags": [
+        "e-commerce",
+        "business-model",
+        "platform-strategy",
+        "retail",
+        "digital-strategy"
+      ],
+      "path": "wiki/synthesized/platform-vs-merchant-model-ecommerce.md"
     }
   },
   "edges": [
@@ -20232,6 +20248,31 @@
       "from": "digital-transformation-roi-measurement-architecture",
       "to": "low-level-design-as-digital-transformation-substrate",
       "type": "relates-to"
+    },
+    {
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "platform-model",
+      "type": "extends"
+    },
+    {
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "merchant-model",
+      "type": "extends"
+    },
+    {
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "merchant-models",
+      "type": "extends"
+    },
+    {
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "amazon",
+      "type": "related"
+    },
+    {
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "network-effects",
+      "type": "related"
     }
   ]
 }

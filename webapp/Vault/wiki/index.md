@@ -794,3 +794,5 @@ Master catalog — 774 pages · last rebuilt 2026-04-17
 - [[synthesized/warfare-c2-architecture-as-digital-transformation-problem|Warfare C2 Architecture as a Digital Transformation Problem]] — synthesized from query
 
 - [[synthesized/digital-transformation-roi-measurement-architecture|Digital Transformation ROI: A Four-Layer Measurement Architecture]] — synthesized from query
+
+- [[synthesized/platform-vs-merchant-model-ecommerce|Platform vs. Merchant Models in E-Commerce: A Six-Dimensional Comparison]] — synthesized from query
