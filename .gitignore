@@ -53,3 +53,5 @@ node_modules/
 venv/
 .venv/
 env/
+
+models/
