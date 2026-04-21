@@ -224,8 +224,9 @@ def main():
     print(f"  wiki_search.faiss : {'found' if FAISS_PATH.exists() else 'not found'}")
     print()
 
-    if not md_path and not in_graph(slug) and not in_slugs(slug):
-        print("Nothing to clean — slug not found in any source.")
+    has_anything = md_path or in_graph(slug) or in_slugs(slug) or FAISS_PATH.exists()
+    if not has_anything:
+        print("Nothing to clean — slug not found in any source and no FAISS on disk.")
         sys.exit(0)
 
     answer = input("Delete and clean all references? [y/N] ").strip().lower()
@@ -242,7 +243,7 @@ def main():
     remove_from_graph(slug)
     clean_other_pages(slug)
     remove_from_slugs(slug)
-    invalidate_faiss()
+    invalidate_faiss()  # always delete stale FAISS so it rebuilds clean at startup
     remove_from_index_md(slug)
 
     print(f"\nDone. FAISS rebuilds automatically at next server startup.")
