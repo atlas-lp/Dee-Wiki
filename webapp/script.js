@@ -341,7 +341,7 @@ function showWikiPropose(messageEl, metadata, originalQuery) {
     proposeDiv.className = "wiki-propose-area";
     proposeDiv.innerHTML = `
         <div class="wiki-propose-header">
-            <span>💡 Prof. Finn suggests updating the Wiki with this synthesis.</span>
+            <span>💡 Prof. Dee suggests updating the Wiki with this synthesis.</span>
         </div>
         <div class="wiki-synthesis-preview">${metadata.new_synthesis}</div>
         <div class="wiki-actions">
@@ -354,7 +354,7 @@ function showWikiPropose(messageEl, metadata, originalQuery) {
                 <input type="file" id="wiki-pdf-input" accept=".pdf">
                 <span id="wiki-pdf-name">📎 Attach PDF (optional)</span>
             </label>
-            <button id="wiki-submit-comment">Submit with Comment</button>
+            <button id="wiki-submit-comment">Submit</button>
         </div>
     `;
 
