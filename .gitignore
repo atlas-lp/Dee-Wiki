@@ -53,17 +53,3 @@ node_modules/
 venv/
 .venv/
 env/
-
-
-# Models
-webapp/models/
-
-# FAISS / embeddings
-webapp/data/*.faiss
-webapp/data/wiki_search_slugs.json
-
-# Generated graph
-webapp/data/_graph.json
-
-# Optional (if auto-generated)
-webapp/Vault/wiki/index.md
