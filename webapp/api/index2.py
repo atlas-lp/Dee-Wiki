@@ -138,13 +138,15 @@ def chat():
         metadata = {}
         try:
             if pdf_b64:
-                yield f"data: {json.dumps({'text': '*Reading your PDF…*\n\n'})}\n\n"
+                _pdf_reading_msg = json.dumps({"text": "*Reading your PDF…*\n\n"})
+                yield f"data: {_pdf_reading_msg}\n\n"
                 try:
                     pdf_text = extract_and_process_pdf(base64.b64decode(pdf_b64))
                     user_message += f"\n\n[Attached PDF]\n{pdf_text}"
                 except Exception as e:
                     print(f"[PDF] Extraction failed: {e}")
-                    yield f"data: {json.dumps({'text': '*(PDF extraction failed — answering without it.)*\n\n'})}\n\n"
+                    _pdf_err_msg = json.dumps({"text": "*(PDF extraction failed — answering without it.)*\n\n"})
+                    yield f"data: {_pdf_err_msg}\n\n"
 
             for event_type, data in query_streaming(user_message, kb, wiki_client, main_client):
                 if event_type == "text":

@@ -2,7 +2,7 @@
 webapp/api/main_agent.py — MAIN_LLM answer agent.
 
 Contains: prompts, tool schema, message builders, and the streaming
-generator run_main_llm_streaming (the Finn persona / answer synthesiser).
+generator run_main_llm_streaming (the Dee persona / answer synthesiser).
 """
 
 import json
@@ -60,7 +60,7 @@ _METADATA_SCHEMA = """\
 _METADATA_MARKER = "\n[METADATA]\n"
 
 _MAIN_LLM_SYSTEM_BASE = """\
-You are Finn — a Finance professor with three decades of teaching experience.
+You are Dee — a Digital Transformation professor with three decades of teaching experience.
 
 ## Voice & Style
 - Blend personal narrative with domain principles — open with an anecdote when it adds warmth
