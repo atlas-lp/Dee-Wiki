@@ -90,6 +90,19 @@
       ],
       "path": "wiki\\concepts\\additive-manufacturing.md"
     },
+    "ai-ethics": {
+      "type": "concept",
+      "title": "AI Ethics",
+      "aliases": [
+        "AI Ethics"
+      ],
+      "tags": [
+        "ai",
+        "ethics",
+        "governance"
+      ],
+      "path": "wiki\\concepts\\ai-ethics.md"
+    },
     "alumni-philanthropy": {
       "type": "concept",
       "title": "Alumni Philanthropy",
@@ -212,6 +225,19 @@
         "industrial-iot"
       ],
       "path": "wiki\\concepts\\asset-performance-management.md"
+    },
+    "asymmetric-runway": {
+      "type": "concept",
+      "title": "Asymmetric Runway",
+      "aliases": [
+        "Asymmetric Runway"
+      ],
+      "tags": [
+        "investment-strategy",
+        "corporate-finance",
+        "startups"
+      ],
+      "path": "wiki\\concepts\\asymmetric-runway.md"
     },
     "attribution-marketing": {
       "type": "concept",
@@ -428,6 +454,18 @@
         "framework"
       ],
       "path": "wiki\\concepts\\building-tech-led-products-process.md"
+    },
+    "bundling-attack-envelopment": {
+      "type": "concept",
+      "title": "Bundling Attack (Envelopment)",
+      "aliases": [
+        "Bundling Attack (Envelopment)"
+      ],
+      "tags": [
+        "platform-economics",
+        "strategy"
+      ],
+      "path": "wiki\\concepts\\bundling-attack-envelopment.md"
     },
     "business-ecosystem": {
       "type": "concept",
@@ -1062,6 +1100,18 @@
       ],
       "path": "wiki\\concepts\\cross-side-network-effect.md"
     },
+    "cross-side-network-effects": {
+      "type": "concept",
+      "title": "Cross-Side Network Effects",
+      "aliases": [
+        "Cross-Side Network Effects"
+      ],
+      "tags": [
+        "platform-economics",
+        "network-effects"
+      ],
+      "path": "wiki\\concepts\\cross-side-network-effects.md"
+    },
     "crowdsourcing": {
       "type": "concept",
       "title": "Crowdsourcing",
@@ -1073,6 +1123,18 @@
         "market-research"
       ],
       "path": "wiki\\concepts\\crowdsourcing.md"
+    },
+    "customer-absorption-rate": {
+      "type": "concept",
+      "title": "Customer Absorption Rate",
+      "aliases": [
+        "Customer Absorption Rate"
+      ],
+      "tags": [
+        "disruption",
+        "customer-behavior"
+      ],
+      "path": "wiki\\concepts\\customer-absorption-rate.md"
     },
     "customer-acquisition-cost": {
       "type": "concept",
@@ -1579,6 +1641,19 @@
       ],
       "path": "wiki\\concepts\\digital-strategy.md"
     },
+    "digital-transformation-profit-dip": {
+      "type": "concept",
+      "title": "Digital Transformation Profit Dip",
+      "aliases": [
+        "Digital Transformation Profit Dip"
+      ],
+      "tags": [
+        "digital-transformation",
+        "corporate-finance",
+        "strategy"
+      ],
+      "path": "wiki\\concepts\\digital-transformation-profit-dip.md"
+    },
     "digital-transformation": {
       "type": "concept",
       "title": "Digital Transformation",
@@ -1653,6 +1728,18 @@
         "economics"
       ],
       "path": "wiki\\concepts\\direct-network-effect.md"
+    },
+    "disruption-digital": {
+      "type": "concept",
+      "title": "Digital Disruption",
+      "aliases": [
+        "Digital Disruption"
+      ],
+      "tags": [
+        "disruption",
+        "strategy"
+      ],
+      "path": "wiki\\concepts\\disruption-digital.md"
     },
     "disruption": {
       "type": "concept",
@@ -2585,6 +2672,19 @@
       ],
       "path": "wiki\\concepts\\incumbent-inertia.md"
     },
+    "incumbents-curse": {
+      "type": "concept",
+      "title": "Incumbent's Curse",
+      "aliases": [
+        "Incumbent's Curse"
+      ],
+      "tags": [
+        "business-strategy",
+        "transformation",
+        "investment"
+      ],
+      "path": "wiki\\concepts\\incumbents-curse.md"
+    },
     "incumbents": {
       "type": "concept",
       "title": "Incumbents",
@@ -2734,6 +2834,18 @@
       ],
       "path": "wiki\\concepts\\influencer-marketing.md"
     },
+    "information-product-separation": {
+      "type": "concept",
+      "title": "Information-Product Separation",
+      "aliases": [
+        "Information-Product Separation"
+      ],
+      "tags": [
+        "disruption",
+        "digital-economics"
+      ],
+      "path": "wiki\\concepts\\information-product-separation.md"
+    },
     "initial-public-offering": {
       "type": "concept",
       "title": "Initial Public Offering (IPO)",
@@ -2823,6 +2935,19 @@
         "investor-relations"
       ],
       "path": "wiki\\concepts\\investor-expectations-constraint-on-innovation.md"
+    },
+    "investor-valuation-focus": {
+      "type": "concept",
+      "title": "Investor Valuation Focus",
+      "aliases": [
+        "Investor Valuation Focus"
+      ],
+      "tags": [
+        "investment",
+        "valuation",
+        "digital-transformation"
+      ],
+      "path": "wiki\\concepts\\investor-valuation-focus.md"
     },
     "it-led-business-transformation": {
       "type": "concept",
@@ -2925,6 +3050,19 @@
       ],
       "path": "wiki\\concepts\\learning-through-experimentation.md"
     },
+    "learning": {
+      "type": "concept",
+      "title": "Learning",
+      "aliases": [
+        "Learning"
+      ],
+      "tags": [
+        "ai",
+        "sub-field",
+        "machine-learning"
+      ],
+      "path": "wiki\\concepts\\learning.md"
+    },
     "legal-technology": {
       "type": "concept",
       "title": "Legal Technology (LegalTech)",
@@ -2974,6 +3112,30 @@
         "valuation"
       ],
       "path": "wiki\\concepts\\market-myopia.md"
+    },
+    "market-overshooting": {
+      "type": "concept",
+      "title": "Market Overshooting",
+      "aliases": [
+        "Market Overshooting"
+      ],
+      "tags": [
+        "disruption",
+        "market-dynamics"
+      ],
+      "path": "wiki\\concepts\\market-overshooting.md"
+    },
+    "market-tipping": {
+      "type": "concept",
+      "title": "Market Tipping",
+      "aliases": [
+        "Market Tipping"
+      ],
+      "tags": [
+        "platform-economics",
+        "market-dynamics"
+      ],
+      "path": "wiki\\concepts\\market-tipping.md"
     },
     "marketplace-model": {
       "type": "concept",
@@ -3403,6 +3565,18 @@
       ],
       "path": "wiki\\concepts\\open-system-platform.md"
     },
+    "operational-excellence": {
+      "type": "concept",
+      "title": "Operational Excellence",
+      "aliases": [
+        "Operational Excellence"
+      ],
+      "tags": [
+        "strategy",
+        "operations"
+      ],
+      "path": "wiki\\concepts\\operational-excellence.md"
+    },
     "organizational-collision": {
       "type": "concept",
       "title": "Organizational Collision",
@@ -3427,6 +3601,18 @@
         "economics"
       ],
       "path": "wiki\\concepts\\organized-vs-unorganized-retail.md"
+    },
+    "outcome-based-business-model": {
+      "type": "concept",
+      "title": "Outcome-Based Business Model",
+      "aliases": [
+        "Outcome-Based Business Model"
+      ],
+      "tags": [
+        "business-model",
+        "value-creation"
+      ],
+      "path": "wiki\\concepts\\outcome-based-business-model.md"
     },
     "outcome-based-contracts": {
       "type": "concept",
@@ -3605,6 +3791,19 @@
       ],
       "path": "wiki\\concepts\\perception-in-ai.md"
     },
+    "perception": {
+      "type": "concept",
+      "title": "Perception",
+      "aliases": [
+        "Perception"
+      ],
+      "tags": [
+        "ai",
+        "sub-field",
+        "computer-vision"
+      ],
+      "path": "wiki\\concepts\\perception.md"
+    },
     "performance-spread": {
       "type": "concept",
       "title": "Performance Spread",
@@ -3750,6 +3949,19 @@
       ],
       "path": "wiki\\concepts\\platform-business-model.md"
     },
+    "platform-dynamics": {
+      "type": "concept",
+      "title": "Platform Dynamics",
+      "aliases": [
+        "Platform Dynamics"
+      ],
+      "tags": [
+        "business-models",
+        "disruption",
+        "ecosystems"
+      ],
+      "path": "wiki\\concepts\\platform-dynamics.md"
+    },
     "platform-envelopment": {
       "type": "concept",
       "title": "Platform Envelopment",
@@ -3836,6 +4048,18 @@
       ],
       "path": "wiki\\concepts\\platform-strategy.md"
     },
+    "platform-subsidization": {
+      "type": "concept",
+      "title": "Platform Subsidization",
+      "aliases": [
+        "Platform Subsidization"
+      ],
+      "tags": [
+        "platform-economics",
+        "strategy"
+      ],
+      "path": "wiki\\concepts\\platform-subsidization.md"
+    },
     "platforms": {
       "type": "concept",
       "title": "Platforms",
@@ -3873,6 +4097,19 @@
       ],
       "path": "wiki\\concepts\\powerful-machines.md"
     },
+    "predictive-ai": {
+      "type": "concept",
+      "title": "Predictive AI",
+      "aliases": [
+        "Predictive AI"
+      ],
+      "tags": [
+        "ai",
+        "application",
+        "forecasting"
+      ],
+      "path": "wiki\\concepts\\predictive-ai.md"
+    },
     "preferential-partnerships": {
       "type": "concept",
       "title": "Preferential Partnerships",
@@ -3885,6 +4122,19 @@
         "digital-transformation"
       ],
       "path": "wiki\\concepts\\preferential-partnerships.md"
+    },
+    "prescriptive-ai": {
+      "type": "concept",
+      "title": "Prescriptive AI",
+      "aliases": [
+        "Prescriptive AI"
+      ],
+      "tags": [
+        "ai",
+        "application",
+        "optimization"
+      ],
+      "path": "wiki\\concepts\\prescriptive-ai.md"
     },
     "prescriptive-questions": {
       "type": "concept",
@@ -3991,6 +4241,17 @@
       ],
       "path": "wiki\\concepts\\product-as-a-service.md"
     },
+    "product-business-model": {
+      "type": "concept",
+      "title": "Product Business Model",
+      "aliases": [
+        "Product Business Model"
+      ],
+      "tags": [
+        "business-model"
+      ],
+      "path": "wiki\\concepts\\product-business-model.md"
+    },
     "product-definition-shift": {
       "type": "concept",
       "title": "Product Definition Shift",
@@ -4002,6 +4263,18 @@
         "industry-analysis"
       ],
       "path": "wiki\\concepts\\product-definition-shift.md"
+    },
+    "product-leadership": {
+      "type": "concept",
+      "title": "Product Leadership",
+      "aliases": [
+        "Product Leadership"
+      ],
+      "tags": [
+        "strategy",
+        "innovation"
+      ],
+      "path": "wiki\\concepts\\product-leadership.md"
     },
     "product-phases": {
       "type": "concept",
@@ -4384,6 +4657,17 @@
         "motivation"
       ],
       "path": "wiki\\concepts\\self-selection-in-innovation.md"
+    },
+    "service-business-model": {
+      "type": "concept",
+      "title": "Service Business Model",
+      "aliases": [
+        "Service Business Model"
+      ],
+      "tags": [
+        "business-model"
+      ],
+      "path": "wiki\\concepts\\service-business-model.md"
     },
     "shift-from-storytelling-to-story-making": {
       "type": "concept",
@@ -4901,6 +5185,18 @@
       ],
       "path": "wiki\\concepts\\technology-enabled-business-models.md"
     },
+    "technology-improvement-rate": {
+      "type": "concept",
+      "title": "Technology Improvement Rate",
+      "aliases": [
+        "Technology Improvement Rate"
+      ],
+      "tags": [
+        "disruption",
+        "innovation"
+      ],
+      "path": "wiki\\concepts\\technology-improvement-rate.md"
+    },
     "the-digital-matrix-framework": {
       "type": "concept",
       "title": "The Digital Matrix (Framework)",
@@ -5081,6 +5377,19 @@
       ],
       "path": "wiki\\concepts\\transfer-learning.md"
     },
+    "transformation-trough": {
+      "type": "concept",
+      "title": "Transformation Trough",
+      "aliases": [
+        "Transformation Trough"
+      ],
+      "tags": [
+        "business-strategy",
+        "performance-metrics",
+        "transformation"
+      ],
+      "path": "wiki\\concepts\\transformation-trough.md"
+    },
     "transformer-model": {
       "type": "concept",
       "title": "Transformer Model",
@@ -5129,6 +5438,19 @@
         "platform-structure"
       ],
       "path": "wiki\\concepts\\two-sided-network.md"
+    },
+    "typology-of-business-models": {
+      "type": "concept",
+      "title": "Typology of Business Models",
+      "aliases": [
+        "Typology of Business Models"
+      ],
+      "tags": [
+        "business-model",
+        "strategy",
+        "framework"
+      ],
+      "path": "wiki\\concepts\\typology-of-business-models.md"
     },
     "unsupervised-learning": {
       "type": "concept",
@@ -6995,6 +7317,20 @@
       ],
       "path": "wiki\\entities\\harvard-nasa-tournament-lab.md"
     },
+    "hdfc-ergo-here-health-ecosystem": {
+      "type": "entity",
+      "title": "HDFC ERGO's Here Health ecosystem",
+      "aliases": [
+        "HDFC ERGO's Here Health ecosystem"
+      ],
+      "tags": [
+        "ecosystem",
+        "case-study",
+        "healthcare",
+        "insurance"
+      ],
+      "path": "wiki\\entities\\hdfc-ergo-here-health-ecosystem.md"
+    },
     "healthkit": {
       "type": "entity",
       "title": "HealthKit",
@@ -7686,6 +8022,18 @@
       ],
       "path": "wiki\\entities\\leap.md"
     },
+    "lemonade": {
+      "type": "entity",
+      "title": "Lemonade",
+      "aliases": [
+        "Lemonade"
+      ],
+      "tags": [
+        "company",
+        "insurtech"
+      ],
+      "path": "wiki\\entities\\lemonade.md"
+    },
     "lenovo": {
       "type": "entity",
       "title": "Lenovo",
@@ -8001,6 +8349,18 @@
         "engineer"
       ],
       "path": "wiki\\entities\\mohammad-ehteshami.md"
+    },
+    "monster-com": {
+      "type": "entity",
+      "title": "Monster.com",
+      "aliases": [
+        "Monster.com"
+      ],
+      "tags": [
+        "company",
+        "platform"
+      ],
+      "path": "wiki\\entities\\monster-com.md"
     },
     "morris-technologies": {
       "type": "entity",
@@ -8319,6 +8679,18 @@
       ],
       "path": "wiki\\entities\\p-and-g.md"
     },
+    "paypal": {
+      "type": "entity",
+      "title": "PayPal",
+      "aliases": [
+        "PayPal"
+      ],
+      "tags": [
+        "company",
+        "fintech"
+      ],
+      "path": "wiki\\entities\\paypal.md"
+    },
     "paytm": {
       "type": "entity",
       "title": "Paytm",
@@ -8370,6 +8742,19 @@
         "lighting"
       ],
       "path": "wiki\\entities\\philips.md"
+    },
+    "ping-an-ecosystem": {
+      "type": "entity",
+      "title": "The Ping An Ecosystem",
+      "aliases": [
+        "The Ping An Ecosystem"
+      ],
+      "tags": [
+        "ecosystem",
+        "case-study",
+        "financial-services"
+      ],
+      "path": "wiki\\entities\\ping-an-ecosystem.md"
     },
     "porsche-passport": {
       "type": "entity",
@@ -8484,6 +8869,18 @@
         "marketing"
       ],
       "path": "wiki\\entities\\raja-rajamannar.md"
+    },
+    "real-networks": {
+      "type": "entity",
+      "title": "Real Networks",
+      "aliases": [
+        "Real Networks"
+      ],
+      "tags": [
+        "company",
+        "case-study"
+      ],
+      "path": "wiki\\entities\\real-networks.md"
     },
     "red-roof-inn": {
       "type": "entity",
@@ -9178,6 +9575,18 @@
       ],
       "path": "wiki\\entities\\unreal-engine.md"
     },
+    "upi": {
+      "type": "entity",
+      "title": "UPI (Unified Payments Interface)",
+      "aliases": [
+        "UPI (Unified Payments Interface)"
+      ],
+      "tags": [
+        "payment-system",
+        "platform"
+      ],
+      "path": "wiki\\entities\\upi.md"
+    },
     "ups": {
       "type": "entity",
       "title": "UPS",
@@ -9592,6 +10001,19 @@
       ],
       "path": "wiki\\stubs\\stub-ai.md"
     },
+    "stub-bmi-claude-structure": {
+      "type": "stub",
+      "title": "Bmi Claude Structure",
+      "aliases": [
+        "Bmi Claude Structure",
+        "BMI Claude Structure",
+        "Business Model Innovation Structure"
+      ],
+      "tags": [
+        "rag-stub"
+      ],
+      "path": "wiki\\stubs\\stub-bmi-claude-structure.md"
+    },
     "stub-building-tech-led-products": {
       "type": "unknown",
       "title": "Stub Building Tech Led Products",
@@ -9609,6 +10031,17 @@
         "rag-stub"
       ],
       "path": "wiki\\stubs\\stub-driving-digital-strategy-a-guide-to-reimagining-your-1.md"
+    },
+    "stub-dt-data": {
+      "type": "stub",
+      "title": "Dt Data",
+      "aliases": [
+        "Dt Data"
+      ],
+      "tags": [
+        "rag-stub"
+      ],
+      "path": "wiki\\stubs\\stub-dt-data.md"
     },
     "stub-incumbents-response": {
       "type": "stub",
@@ -9748,6 +10181,47 @@
       ],
       "path": "wiki\\synthesized\\digital-disruption-as-political-disruption.md"
     },
+    "digital-transformation-4-module-course-outline": {
+      "type": "synthesized",
+      "title": "Digital Transformation: 4-Module Course Outline (68-Minute Architecture)",
+      "aliases": [
+        "Digital Transformation Course Outline",
+        "4-Module Digital Transformation Course",
+        "68-Minute Digital Transformation Course"
+      ],
+      "tags": [
+        "course-design",
+        "digital-transformation",
+        "curriculum",
+        "framework",
+        "business-strategy",
+        "venkatraman",
+        "gupta",
+        "learning-design"
+      ],
+      "path": "wiki\\synthesized\\digital-transformation-4-module-course-outline.md"
+    },
+    "digital-transformation-roi-measurement-architecture": {
+      "type": "synthesized",
+      "title": "Digital Transformation ROI: A Four-Layer Measurement Architecture",
+      "aliases": [
+        "transformation-roi",
+        "intangible-value-measurement",
+        "digital-roi-framework"
+      ],
+      "tags": [
+        "digital-transformation",
+        "roi",
+        "measurement",
+        "ecosystem",
+        "investor-constraints",
+        "platform-strategy",
+        "value-creation",
+        "agility",
+        "network-effects"
+      ],
+      "path": "wiki\\synthesized\\digital-transformation-roi-measurement-architecture.md"
+    },
     "ecosystem-competition-and-antitrust-misalignment": {
       "type": "synthesized",
       "title": "Ecosystem Competition and the Structural Misalignment of Antitrust Policy",
@@ -9840,23 +10314,21 @@
       ],
       "path": "wiki\\synthesized\\low-level-design-as-digital-transformation-substrate.md"
     },
-    "web3-decentralization-paradox": {
+    "platform-vs-merchant-model-ecommerce": {
       "type": "synthesized",
-      "title": "Web3's Decentralization Paradox: Challenging and Depending on Platform Control",
+      "title": "Platform vs. Merchant Models in E-Commerce: A Six-Dimensional Comparison",
       "aliases": [
-        "web3-infrastructure-paradox",
-        "decentralization-centralization-tension"
+        "platform-merchant-distinction",
+        "ecommerce-model-comparison"
       ],
       "tags": [
-        "web3",
-        "decentralization",
-        "platform-control",
-        "ecosystem",
-        "blockchain",
-        "infrastructure",
+        "e-commerce",
+        "business-model",
+        "platform-strategy",
+        "retail",
         "digital-strategy"
       ],
-      "path": "wiki\\synthesized\\web3-decentralization-paradox.md"
+      "path": "wiki\\synthesized\\platform-vs-merchant-model-ecommerce.md"
     },
     "warfare-c2-architecture-as-digital-transformation-problem": {
       "type": "synthesized",
@@ -9878,501 +10350,25 @@
         "cyber-physical-systems",
         "ecosystem-orchestration"
       ],
-<<<<<<< HEAD
-      "path": "wiki/synthesized/warfare-c2-architecture-as-digital-transformation-problem.md"
-    },
-    "digital-transformation-roi-measurement-architecture": {
-      "type": "synthesized",
-      "title": "Digital Transformation ROI: A Four-Layer Measurement Architecture",
-      "aliases": [
-        "transformation-roi",
-        "intangible-value-measurement",
-        "digital-roi-framework"
-      ],
-      "tags": [
-        "digital-transformation",
-        "roi",
-        "measurement",
-        "ecosystem",
-        "investor-constraints",
-        "platform-strategy",
-        "value-creation",
-        "agility",
-        "network-effects"
-      ],
-      "path": "wiki/synthesized/digital-transformation-roi-measurement-architecture.md"
-    },
-    "platform-vs-merchant-model-ecommerce": {
-      "type": "synthesized",
-      "title": "Platform vs. Merchant Models in E-Commerce: A Six-Dimensional Comparison",
-      "aliases": [
-        "platform-merchant-distinction",
-        "ecommerce-model-comparison"
-      ],
-      "tags": [
-        "e-commerce",
-        "business-model",
-        "platform-strategy",
-        "retail",
-        "digital-strategy"
-      ],
-      "path": "wiki/synthesized/platform-vs-merchant-model-ecommerce.md"
-    },
-    "digital-transformation-4-module-course-outline": {
-      "type": "synthesized",
-      "title": "Digital Transformation: 4-Module Course Outline (68-Minute Architecture)",
-      "aliases": [
-        "Digital Transformation Course Outline",
-        "4-Module Digital Transformation Course",
-        "68-Minute Digital Transformation Course"
-      ],
-      "tags": [
-        "course-design",
-        "digital-transformation",
-        "curriculum",
-        "framework",
-        "business-strategy",
-        "venkatraman",
-        "gupta",
-        "learning-design"
-      ],
-      "path": "wiki/synthesized/digital-transformation-4-module-course-outline.md"
-=======
       "path": "wiki\\synthesized\\warfare-c2-architecture-as-digital-transformation-problem.md"
     },
-    "ai-ethics": {
-      "type": "concept",
-      "title": "AI Ethics",
+    "web3-decentralization-paradox": {
+      "type": "synthesized",
+      "title": "Web3's Decentralization Paradox: Challenging and Depending on Platform Control",
       "aliases": [
-        "AI Ethics"
+        "web3-infrastructure-paradox",
+        "decentralization-centralization-tension"
       ],
       "tags": [
-        "ai",
-        "ethics",
-        "governance"
-      ],
-      "path": "wiki\\concepts\\ai-ethics.md"
-    },
-    "learning": {
-      "type": "concept",
-      "title": "Learning",
-      "aliases": [
-        "Learning"
-      ],
-      "tags": [
-        "ai",
-        "sub-field",
-        "machine-learning"
-      ],
-      "path": "wiki\\concepts\\learning.md"
-    },
-    "perception": {
-      "type": "concept",
-      "title": "Perception",
-      "aliases": [
-        "Perception"
-      ],
-      "tags": [
-        "ai",
-        "sub-field",
-        "computer-vision"
-      ],
-      "path": "wiki\\concepts\\perception.md"
-    },
-    "predictive-ai": {
-      "type": "concept",
-      "title": "Predictive AI",
-      "aliases": [
-        "Predictive AI"
-      ],
-      "tags": [
-        "ai",
-        "application",
-        "forecasting"
-      ],
-      "path": "wiki\\concepts\\predictive-ai.md"
-    },
-    "prescriptive-ai": {
-      "type": "concept",
-      "title": "Prescriptive AI",
-      "aliases": [
-        "Prescriptive AI"
-      ],
-      "tags": [
-        "ai",
-        "application",
-        "optimization"
-      ],
-      "path": "wiki\\concepts\\prescriptive-ai.md"
-    },
-    "asymmetric-runway": {
-      "type": "concept",
-      "title": "Asymmetric Runway",
-      "aliases": [
-        "Asymmetric Runway"
-      ],
-      "tags": [
-        "investment-strategy",
-        "corporate-finance",
-        "startups"
-      ],
-      "path": "wiki\\concepts\\asymmetric-runway.md"
-    },
-    "bundling-attack-envelopment": {
-      "type": "concept",
-      "title": "Bundling Attack (Envelopment)",
-      "aliases": [
-        "Bundling Attack (Envelopment)"
-      ],
-      "tags": [
-        "platform-economics",
-        "strategy"
-      ],
-      "path": "wiki\\concepts\\bundling-attack-envelopment.md"
-    },
-    "cross-side-network-effects": {
-      "type": "concept",
-      "title": "Cross-Side Network Effects",
-      "aliases": [
-        "Cross-Side Network Effects"
-      ],
-      "tags": [
-        "platform-economics",
-        "network-effects"
-      ],
-      "path": "wiki\\concepts\\cross-side-network-effects.md"
-    },
-    "customer-absorption-rate": {
-      "type": "concept",
-      "title": "Customer Absorption Rate",
-      "aliases": [
-        "Customer Absorption Rate"
-      ],
-      "tags": [
-        "disruption",
-        "customer-behavior"
-      ],
-      "path": "wiki\\concepts\\customer-absorption-rate.md"
-    },
-    "disruption-digital": {
-      "type": "concept",
-      "title": "Digital Disruption",
-      "aliases": [
-        "Digital Disruption"
-      ],
-      "tags": [
-        "disruption",
-        "strategy"
-      ],
-      "path": "wiki\\concepts\\disruption-digital.md"
-    },
-    "incumbents-curse": {
-      "type": "concept",
-      "title": "Incumbent's Curse",
-      "aliases": [
-        "Incumbent's Curse"
-      ],
-      "tags": [
-        "business-strategy",
-        "transformation",
-        "investment"
-      ],
-      "path": "wiki\\concepts\\incumbents-curse.md"
-    },
-    "information-product-separation": {
-      "type": "concept",
-      "title": "Information-Product Separation",
-      "aliases": [
-        "Information-Product Separation"
-      ],
-      "tags": [
-        "disruption",
-        "digital-economics"
-      ],
-      "path": "wiki\\concepts\\information-product-separation.md"
-    },
-    "market-overshooting": {
-      "type": "concept",
-      "title": "Market Overshooting",
-      "aliases": [
-        "Market Overshooting"
-      ],
-      "tags": [
-        "disruption",
-        "market-dynamics"
-      ],
-      "path": "wiki\\concepts\\market-overshooting.md"
-    },
-    "market-tipping": {
-      "type": "concept",
-      "title": "Market Tipping",
-      "aliases": [
-        "Market Tipping"
-      ],
-      "tags": [
-        "platform-economics",
-        "market-dynamics"
-      ],
-      "path": "wiki\\concepts\\market-tipping.md"
-    },
-    "operational-excellence": {
-      "type": "concept",
-      "title": "Operational Excellence",
-      "aliases": [
-        "Operational Excellence"
-      ],
-      "tags": [
-        "strategy",
-        "operations"
-      ],
-      "path": "wiki\\concepts\\operational-excellence.md"
-    },
-    "outcome-based-business-model": {
-      "type": "concept",
-      "title": "Outcome-Based Business Model",
-      "aliases": [
-        "Outcome-Based Business Model"
-      ],
-      "tags": [
-        "business-model",
-        "value-creation"
-      ],
-      "path": "wiki\\concepts\\outcome-based-business-model.md"
-    },
-    "platform-dynamics": {
-      "type": "concept",
-      "title": "Platform Dynamics",
-      "aliases": [
-        "Platform Dynamics"
-      ],
-      "tags": [
-        "business-models",
-        "disruption",
-        "ecosystems"
-      ],
-      "path": "wiki\\concepts\\platform-dynamics.md"
-    },
-    "platform-subsidization": {
-      "type": "concept",
-      "title": "Platform Subsidization",
-      "aliases": [
-        "Platform Subsidization"
-      ],
-      "tags": [
-        "platform-economics",
-        "strategy"
-      ],
-      "path": "wiki\\concepts\\platform-subsidization.md"
-    },
-    "product-leadership": {
-      "type": "concept",
-      "title": "Product Leadership",
-      "aliases": [
-        "Product Leadership"
-      ],
-      "tags": [
-        "strategy",
-        "innovation"
-      ],
-      "path": "wiki\\concepts\\product-leadership.md"
-    },
-    "technology-improvement-rate": {
-      "type": "concept",
-      "title": "Technology Improvement Rate",
-      "aliases": [
-        "Technology Improvement Rate"
-      ],
-      "tags": [
-        "disruption",
-        "innovation"
-      ],
-      "path": "wiki\\concepts\\technology-improvement-rate.md"
-    },
-    "transformation-trough": {
-      "type": "concept",
-      "title": "Transformation Trough",
-      "aliases": [
-        "Transformation Trough"
-      ],
-      "tags": [
-        "business-strategy",
-        "performance-metrics",
-        "transformation"
-      ],
-      "path": "wiki\\concepts\\transformation-trough.md"
-    },
-    "lemonade": {
-      "type": "entity",
-      "title": "Lemonade",
-      "aliases": [
-        "Lemonade"
-      ],
-      "tags": [
-        "company",
-        "insurtech"
-      ],
-      "path": "wiki\\entities\\lemonade.md"
-    },
-    "monster-com": {
-      "type": "entity",
-      "title": "Monster.com",
-      "aliases": [
-        "Monster.com"
-      ],
-      "tags": [
-        "company",
-        "platform"
-      ],
-      "path": "wiki\\entities\\monster-com.md"
-    },
-    "paypal": {
-      "type": "entity",
-      "title": "PayPal",
-      "aliases": [
-        "PayPal"
-      ],
-      "tags": [
-        "company",
-        "fintech"
-      ],
-      "path": "wiki\\entities\\paypal.md"
-    },
-    "real-networks": {
-      "type": "entity",
-      "title": "Real Networks",
-      "aliases": [
-        "Real Networks"
-      ],
-      "tags": [
-        "company",
-        "case-study"
-      ],
-      "path": "wiki\\entities\\real-networks.md"
-    },
-    "upi": {
-      "type": "entity",
-      "title": "UPI (Unified Payments Interface)",
-      "aliases": [
-        "UPI (Unified Payments Interface)"
-      ],
-      "tags": [
-        "payment-system",
-        "platform"
-      ],
-      "path": "wiki\\entities\\upi.md"
-    },
-    "digital-transformation-profit-dip": {
-      "type": "concept",
-      "title": "Digital Transformation Profit Dip",
-      "aliases": [
-        "Digital Transformation Profit Dip"
-      ],
-      "tags": [
-        "digital-transformation",
-        "corporate-finance",
-        "strategy"
-      ],
-      "path": "wiki\\concepts\\digital-transformation-profit-dip.md"
-    },
-    "investor-valuation-focus": {
-      "type": "concept",
-      "title": "Investor Valuation Focus",
-      "aliases": [
-        "Investor Valuation Focus"
-      ],
-      "tags": [
-        "investment",
-        "valuation",
-        "digital-transformation"
-      ],
-      "path": "wiki\\concepts\\investor-valuation-focus.md"
-    },
-    "product-business-model": {
-      "type": "concept",
-      "title": "Product Business Model",
-      "aliases": [
-        "Product Business Model"
-      ],
-      "tags": [
-        "business-model"
-      ],
-      "path": "wiki\\concepts\\product-business-model.md"
-    },
-    "service-business-model": {
-      "type": "concept",
-      "title": "Service Business Model",
-      "aliases": [
-        "Service Business Model"
-      ],
-      "tags": [
-        "business-model"
-      ],
-      "path": "wiki\\concepts\\service-business-model.md"
-    },
-    "typology-of-business-models": {
-      "type": "concept",
-      "title": "Typology of Business Models",
-      "aliases": [
-        "Typology of Business Models"
-      ],
-      "tags": [
-        "business-model",
-        "strategy",
-        "framework"
-      ],
-      "path": "wiki\\concepts\\typology-of-business-models.md"
-    },
-    "hdfc-ergo-here-health-ecosystem": {
-      "type": "entity",
-      "title": "HDFC ERGO's Here Health ecosystem",
-      "aliases": [
-        "HDFC ERGO's Here Health ecosystem"
-      ],
-      "tags": [
+        "web3",
+        "decentralization",
+        "platform-control",
         "ecosystem",
-        "case-study",
-        "healthcare",
-        "insurance"
+        "blockchain",
+        "infrastructure",
+        "digital-strategy"
       ],
-      "path": "wiki\\entities\\hdfc-ergo-here-health-ecosystem.md"
-    },
-    "ping-an-ecosystem": {
-      "type": "entity",
-      "title": "The Ping An Ecosystem",
-      "aliases": [
-        "The Ping An Ecosystem"
-      ],
-      "tags": [
-        "ecosystem",
-        "case-study",
-        "financial-services"
-      ],
-      "path": "wiki\\entities\\ping-an-ecosystem.md"
-    },
-    "stub-bmi-claude-structure": {
-      "type": "stub",
-      "title": "Bmi Claude Structure",
-      "aliases": [
-        "Bmi Claude Structure",
-        "BMI Claude Structure",
-        "Business Model Innovation Structure"
-      ],
-      "tags": [
-        "rag-stub"
-      ],
-      "path": "wiki\\stubs\\stub-bmi-claude-structure.md"
-    },
-    "stub-dt-data": {
-      "type": "stub",
-      "title": "Dt Data",
-      "aliases": [
-        "Dt Data"
-      ],
-      "tags": [
-        "rag-stub"
-      ],
-      "path": "wiki\\stubs\\stub-dt-data.md"
->>>>>>> 12c0d40 (feedback)
+      "path": "wiki\\synthesized\\web3-decentralization-paradox.md"
     }
   },
   "edges": [
@@ -10415,6 +10411,11 @@
       "from": "additive-manufacturing",
       "to": "industry-4-0",
       "type": "part_of"
+    },
+    {
+      "from": "ai-ethics",
+      "to": "artificial-intelligence",
+      "type": "is_related_to"
     },
     {
       "from": "alumni-philanthropy",
@@ -10495,6 +10496,11 @@
       "from": "asset-performance-management",
       "to": "outcome-based-services",
       "type": "enables"
+    },
+    {
+      "from": "asymmetric-runway",
+      "to": "incumbents-curse",
+      "type": "is_a_consequence_of"
     },
     {
       "from": "attribution-marketing",
@@ -11012,6 +11018,11 @@
       "type": "is_type_of"
     },
     {
+      "from": "cross-side-network-effects",
+      "to": "platform-business-model",
+      "type": "is_a_key_feature_of"
+    },
+    {
       "from": "customer-acquisition-funnel",
       "to": "bbva-compass-bank",
       "type": "exemplified_by"
@@ -11327,6 +11338,11 @@
       "type": "is_implemented_by"
     },
     {
+      "from": "digital-transformation-profit-dip",
+      "to": "new-york-times",
+      "type": "exemplified_by"
+    },
+    {
       "from": "digital-transformation",
       "to": "strengthening-the-core-and-building-for-the-future",
       "type": "is_guided_by"
@@ -11380,6 +11396,11 @@
       "from": "direct-network-effect",
       "to": "winner-take-all-environment",
       "type": "leads_to"
+    },
+    {
+      "from": "disruption-digital",
+      "to": "information-product-separation",
+      "type": "driven_by"
     },
     {
       "from": "disruption",
@@ -11897,6 +11918,16 @@
       "type": "is_explained_by"
     },
     {
+      "from": "incumbents-curse",
+      "to": "transformation-trough",
+      "type": "causes"
+    },
+    {
+      "from": "incumbents-curse",
+      "to": "asymmetric-runway",
+      "type": "is_related_to"
+    },
+    {
       "from": "incumbents",
       "to": "experiments-at-the-edge",
       "type": "conducts"
@@ -12077,6 +12108,11 @@
       "type": "uses"
     },
     {
+      "from": "learning",
+      "to": "artificial-intelligence",
+      "type": "is_sub_problem_of"
+    },
+    {
       "from": "low-cost-producer-strategy",
       "to": "michael-e-porter",
       "type": "associated_with"
@@ -12100,6 +12136,16 @@
       "from": "market-myopia",
       "to": "valuation-for-profit",
       "type": "is_related_to"
+    },
+    {
+      "from": "market-overshooting",
+      "to": "technology-improvement-rate",
+      "type": "related_to"
+    },
+    {
+      "from": "market-overshooting",
+      "to": "customer-absorption-rate",
+      "type": "related_to"
     },
     {
       "from": "marketplace-model",
@@ -12437,6 +12483,11 @@
       "type": "is_sub-problem_of"
     },
     {
+      "from": "perception",
+      "to": "artificial-intelligence",
+      "type": "is_sub_problem_of"
+    },
+    {
       "from": "performance-spread",
       "to": "technology-as-a-source-of-competitive-advantage",
       "type": "is_a_result_of"
@@ -12538,6 +12589,16 @@
     },
     {
       "from": "platform-business-model",
+      "to": "typology-of-business-models",
+      "type": "is_a_type_of"
+    },
+    {
+      "from": "platform-business-model",
+      "to": "cross-side-network-effects",
+      "type": "characterized_by"
+    },
+    {
+      "from": "platform-business-model",
       "to": "digital-strategy",
       "type": "is_a_type_of"
     },
@@ -12555,6 +12616,11 @@
       "from": "platform-business-model",
       "to": "single-dealer-model",
       "type": "contrasted_with"
+    },
+    {
+      "from": "platform-dynamics",
+      "to": "uber",
+      "type": "is_exemplified_by"
     },
     {
       "from": "platform-envelopment",
@@ -12657,9 +12723,19 @@
       "type": "example_of"
     },
     {
+      "from": "predictive-ai",
+      "to": "artificial-intelligence",
+      "type": "is_application_of"
+    },
+    {
       "from": "preferential-partnerships",
       "to": "capability-co-creation",
       "type": "enables"
+    },
+    {
+      "from": "prescriptive-ai",
+      "to": "artificial-intelligence",
+      "type": "is_application_of"
     },
     {
       "from": "prescriptive-questions",
@@ -12750,6 +12826,11 @@
       "from": "product-as-a-service",
       "to": "pay-per-lux",
       "type": "includes"
+    },
+    {
+      "from": "product-business-model",
+      "to": "typology-of-business-models",
+      "type": "is_a_type_of"
     },
     {
       "from": "product-definition-shift",
@@ -12952,6 +13033,11 @@
       "type": "explains"
     },
     {
+      "from": "service-business-model",
+      "to": "typology-of-business-models",
+      "type": "is_a_type_of"
+    },
+    {
       "from": "shift-from-storytelling-to-story-making",
       "to": "engagement-that-drives-business",
       "type": "is_a_method_for"
@@ -13010,6 +13096,11 @@
       "from": "software-is-eating-the-world",
       "to": "technology-enabled-business-models",
       "type": "is_demonstrated_by"
+    },
+    {
+      "from": "solution-business-model",
+      "to": "typology-of-business-models",
+      "type": "is_a_type_of"
     },
     {
       "from": "solution-business-model",
@@ -13312,6 +13403,11 @@
       "type": "is_a_type_of"
     },
     {
+      "from": "transformation-trough",
+      "to": "incumbents-curse",
+      "type": "is_a_manifestation_of"
+    },
+    {
       "from": "transformer-model",
       "to": "artificial-intelligence",
       "type": "is_an_application_of"
@@ -13330,6 +13426,26 @@
       "from": "two-sided-network",
       "to": "same-side-network-effect",
       "type": "exhibits"
+    },
+    {
+      "from": "typology-of-business-models",
+      "to": "product-business-model",
+      "type": "includes"
+    },
+    {
+      "from": "typology-of-business-models",
+      "to": "service-business-model",
+      "type": "includes"
+    },
+    {
+      "from": "typology-of-business-models",
+      "to": "platform-business-model",
+      "type": "includes"
+    },
+    {
+      "from": "typology-of-business-models",
+      "to": "solution-business-model",
+      "type": "includes"
     },
     {
       "from": "unsupervised-learning",
@@ -13763,6 +13879,11 @@
     },
     {
       "from": "apple",
+      "to": "itunes",
+      "type": "launched"
+    },
+    {
+      "from": "apple",
       "to": "platform-based-model",
       "type": "exemplifies"
     },
@@ -14158,6 +14279,11 @@
     },
     {
       "from": "digital-equipment-corporation",
+      "to": "market-overshooting",
+      "type": "is_an_example_of"
+    },
+    {
+      "from": "digital-equipment-corporation",
       "to": "apple-ii",
       "type": "was_disrupted_by"
     },
@@ -14393,6 +14519,11 @@
     },
     {
       "from": "ge",
+      "to": "outcome-based-business-model",
+      "type": "is_an_example_of"
+    },
+    {
+      "from": "ge",
       "to": "predix",
       "type": "created"
     },
@@ -14440,6 +14571,11 @@
       "from": "gelato",
       "to": "platform-business-model",
       "type": "uses"
+    },
+    {
+      "from": "general-electric",
+      "to": "incumbents-curse",
+      "type": "is_an_example_of"
     },
     {
       "from": "general-electric",
@@ -14650,6 +14786,11 @@
       "from": "harvard-nasa-tournament-lab",
       "to": "iss-longeron-challenge",
       "type": "oversaw"
+    },
+    {
+      "from": "hdfc-ergo-here-health-ecosystem",
+      "to": "solution-business-model",
+      "type": "is_an_example_of"
     },
     {
       "from": "healthkit",
@@ -15017,6 +15158,11 @@
       "type": "is_a_product_of"
     },
     {
+      "from": "lemonade",
+      "to": "product-leadership",
+      "type": "is_an_example_of"
+    },
+    {
       "from": "lenovo",
       "to": "microsoft",
       "type": "has_coopetitive_relationship_with"
@@ -15208,6 +15354,16 @@
     },
     {
       "from": "microsoft",
+      "to": "bundling-attack-envelopment",
+      "type": "used"
+    },
+    {
+      "from": "microsoft",
+      "to": "real-networks",
+      "type": "competed_with"
+    },
+    {
+      "from": "microsoft",
       "to": "microsoft-teams",
       "type": "owns"
     },
@@ -15225,6 +15381,11 @@
       "from": "mit-sloan-management-review",
       "to": "five-levels-of-it-enabled-transformation",
       "type": "published"
+    },
+    {
+      "from": "monster-com",
+      "to": "platform-business-model",
+      "type": "is_an_example_of"
     },
     {
       "from": "morris-technologies",
@@ -15333,6 +15494,11 @@
     },
     {
       "from": "new-york-times",
+      "to": "digital-transformation-profit-dip",
+      "type": "is_an_example_of"
+    },
+    {
+      "from": "new-york-times",
       "to": "paywall-business-model",
       "type": "implemented"
     },
@@ -15427,6 +15593,11 @@
       "type": "uses"
     },
     {
+      "from": "paypal",
+      "to": "platform-subsidization",
+      "type": "is_an_example_of"
+    },
+    {
       "from": "paytm",
       "to": "complementary-services",
       "type": "exemplifies"
@@ -15450,6 +15621,11 @@
       "from": "philips",
       "to": "schiphol-airport",
       "type": "has_customer"
+    },
+    {
+      "from": "ping-an-ecosystem",
+      "to": "solution-business-model",
+      "type": "is_an_example_of"
     },
     {
       "from": "porsche-passport",
@@ -15515,6 +15691,11 @@
       "from": "raja-rajamannar",
       "to": "digital-transformation",
       "type": "involved_in"
+    },
+    {
+      "from": "real-networks",
+      "to": "microsoft",
+      "type": "was_attacked_by"
     },
     {
       "from": "red-roof-inn",
@@ -15893,6 +16074,11 @@
     },
     {
       "from": "uber",
+      "to": "platform-dynamics",
+      "type": "established"
+    },
+    {
+      "from": "uber",
       "to": "native-apps",
       "type": "is_an_example_of"
     },
@@ -15930,6 +16116,16 @@
       "from": "unreal-engine",
       "to": "metaverse",
       "type": "enables"
+    },
+    {
+      "from": "upi",
+      "to": "platform-subsidization",
+      "type": "is_an_example_of"
+    },
+    {
+      "from": "upi",
+      "to": "market-tipping",
+      "type": "is_an_example_of"
     },
     {
       "from": "ups",
@@ -16163,6 +16359,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/ai-ethics",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/alumni-philanthropy",
       "type": "references"
     },
@@ -16209,6 +16410,11 @@
     {
       "from": "index",
       "to": "concepts/asset-performance-management",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/asymmetric-runway",
       "type": "references"
     },
     {
@@ -16294,6 +16500,11 @@
     {
       "from": "index",
       "to": "concepts/building-tech-led-products-process",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/bundling-attack-envelopment",
       "type": "references"
     },
     {
@@ -16543,7 +16754,17 @@
     },
     {
       "from": "index",
+      "to": "concepts/cross-side-network-effects",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/crowdsourcing",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/customer-absorption-rate",
       "type": "references"
     },
     {
@@ -16743,6 +16964,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/digital-transformation-profit-dip",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/digital-transformation",
       "type": "references"
     },
@@ -16769,6 +16995,11 @@
     {
       "from": "index",
       "to": "concepts/direct-network-effect",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/disruption-digital",
       "type": "references"
     },
     {
@@ -17133,6 +17364,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/incumbents-curse",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/incumbents",
       "type": "references"
     },
@@ -17193,6 +17429,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/information-product-separation",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/initial-public-offering",
       "type": "references"
     },
@@ -17224,6 +17465,11 @@
     {
       "from": "index",
       "to": "concepts/investor-expectations-constraint-on-innovation",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/investor-valuation-focus",
       "type": "references"
     },
     {
@@ -17268,6 +17514,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/learning",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/legal-technology",
       "type": "references"
     },
@@ -17284,6 +17535,16 @@
     {
       "from": "index",
       "to": "concepts/market-myopia",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/market-overshooting",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/market-tipping",
       "type": "references"
     },
     {
@@ -17458,12 +17719,22 @@
     },
     {
       "from": "index",
+      "to": "concepts/operational-excellence",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/organizational-collision",
       "type": "references"
     },
     {
       "from": "index",
       "to": "concepts/organized-vs-unorganized-retail",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/outcome-based-business-model",
       "type": "references"
     },
     {
@@ -17538,6 +17809,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/perception",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/performance-spread",
       "type": "references"
     },
@@ -17593,6 +17869,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/platform-dynamics",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/platform-envelopment",
       "type": "references"
     },
@@ -17628,6 +17909,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/platform-subsidization",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/platforms",
       "type": "references"
     },
@@ -17643,7 +17929,17 @@
     },
     {
       "from": "index",
+      "to": "concepts/predictive-ai",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/preferential-partnerships",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/prescriptive-ai",
       "type": "references"
     },
     {
@@ -17688,7 +17984,17 @@
     },
     {
       "from": "index",
+      "to": "concepts/product-business-model",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/product-definition-shift",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/product-leadership",
       "type": "references"
     },
     {
@@ -17839,6 +18145,11 @@
     {
       "from": "index",
       "to": "concepts/self-selection-in-innovation",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/service-business-model",
       "type": "references"
     },
     {
@@ -18048,6 +18359,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/technology-improvement-rate",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/the-digital-matrix-framework",
       "type": "references"
     },
@@ -18118,6 +18434,11 @@
     },
     {
       "from": "index",
+      "to": "concepts/transformation-trough",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "concepts/transformer-model",
       "type": "references"
     },
@@ -18134,6 +18455,11 @@
     {
       "from": "index",
       "to": "concepts/two-sided-network",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "concepts/typology-of-business-models",
       "type": "references"
     },
     {
@@ -18878,6 +19204,11 @@
     },
     {
       "from": "index",
+      "to": "entities/hdfc-ergo-here-health-ecosystem",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "entities/healthkit",
       "type": "references"
     },
@@ -19148,6 +19479,11 @@
     },
     {
       "from": "index",
+      "to": "entities/lemonade",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "entities/lenovo",
       "type": "references"
     },
@@ -19269,6 +19605,11 @@
     {
       "from": "index",
       "to": "entities/mohammad-ehteshami",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "entities/monster-com",
       "type": "references"
     },
     {
@@ -19398,6 +19739,11 @@
     },
     {
       "from": "index",
+      "to": "entities/paypal",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "entities/paytm",
       "type": "references"
     },
@@ -19414,6 +19760,11 @@
     {
       "from": "index",
       "to": "entities/philips",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "entities/ping-an-ecosystem",
       "type": "references"
     },
     {
@@ -19459,6 +19810,11 @@
     {
       "from": "index",
       "to": "entities/raja-rajamannar",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "entities/real-networks",
       "type": "references"
     },
     {
@@ -19743,6 +20099,11 @@
     },
     {
       "from": "index",
+      "to": "entities/upi",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "entities/ups",
       "type": "references"
     },
@@ -19883,6 +20244,16 @@
     },
     {
       "from": "index",
+      "to": "synthesized/digital-transformation-4-module-course-outline",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "synthesized/digital-transformation-roi-measurement-architecture",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "synthesized/ecosystem-competition-and-antitrust-misalignment",
       "type": "references"
     },
@@ -19908,6 +20279,16 @@
     },
     {
       "from": "index",
+      "to": "synthesized/platform-vs-merchant-model-ecommerce",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "synthesized/warfare-c2-architecture-as-digital-transformation-problem",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "synthesized/web3-decentralization-paradox",
       "type": "references"
     },
@@ -19918,12 +20299,22 @@
     },
     {
       "from": "index",
+      "to": "stubs/stub-bmi-claude-structure",
+      "type": "references"
+    },
+    {
+      "from": "index",
       "to": "stubs/stub-building-tech-led-products",
       "type": "references"
     },
     {
       "from": "index",
       "to": "stubs/stub-driving-digital-strategy-a-guide-to-reimagining-your-1",
+      "type": "references"
+    },
+    {
+      "from": "index",
+      "to": "stubs/stub-dt-data",
       "type": "references"
     },
     {
@@ -20317,6 +20708,116 @@
       "type": "references"
     },
     {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "the-digital-matrix-framework",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "stub-driving-digital-strategy-a-guide-to-reimagining-your-1",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "stub-the-digital-matrix-new-rules-for-business-transformation-1",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "digital-matrix",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "three-winning-moves",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "three-phases-of-transformation",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "the-digital-matrix",
+      "type": "references"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "experimentation-at-the-edge",
+      "type": "references"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "collision-at-the-core",
+      "type": "references"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "reinvention-at-the-root",
+      "type": "references"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "digital-giant",
+      "type": "references"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "industry-incumbent",
+      "type": "references"
+    },
+    {
+      "from": "digital-transformation-4-module-course-outline",
+      "to": "tech-entrepreneur",
+      "type": "references"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "digital-transformation",
+      "type": "extends"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "trajectory-contingent-matching",
+      "type": "relates-to"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "digital-innovation-under-investor-constraints",
+      "type": "relates-to"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "financial-architecture-as-digital-transformation-barrier",
+      "type": "relates-to"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "ecosystem-orchestration",
+      "type": "relates-to"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "ecosystem-participation",
+      "type": "relates-to"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "digital-business-ecosystem",
+      "type": "relates-to"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "network-centric-digital-strategy",
+      "type": "relates-to"
+    },
+    {
+      "from": "digital-transformation-roi-measurement-architecture",
+      "to": "low-level-design-as-digital-transformation-substrate",
+      "type": "relates-to"
+    },
+    {
       "from": "ecosystem-competition-and-antitrust-misalignment",
       "to": "digital-business-ecosystem",
       "type": "extends"
@@ -20592,39 +21093,29 @@
       "type": "references"
     },
     {
-      "from": "web3-decentralization-paradox",
-      "to": "blockchain-technology",
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "platform-model",
       "type": "extends"
     },
     {
-      "from": "web3-decentralization-paradox",
-      "to": "blockchain",
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "merchant-model",
       "type": "extends"
     },
     {
-      "from": "web3-decentralization-paradox",
-      "to": "digital-business-ecosystem",
-      "type": "relates-to"
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "merchant-models",
+      "type": "extends"
     },
     {
-      "from": "web3-decentralization-paradox",
-      "to": "ecosystem-orchestration",
-      "type": "contrasts-with"
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "amazon",
+      "type": "related"
     },
     {
-      "from": "web3-decentralization-paradox",
-      "to": "closed-system-platform",
-      "type": "contrasts-with"
-    },
-    {
-      "from": "web3-decentralization-paradox",
-      "to": "technology-organization-policy-nexus",
-      "type": "relates-to"
-    },
-    {
-      "from": "web3-decentralization-paradox",
-      "to": "digital-disruption-as-political-disruption",
-      "type": "relates-to"
+      "from": "platform-vs-merchant-model-ecommerce",
+      "to": "network-effects",
+      "type": "related"
     },
     {
       "from": "warfare-c2-architecture-as-digital-transformation-problem",
@@ -20662,485 +21153,39 @@
       "type": "relates-to"
     },
     {
-<<<<<<< HEAD
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "digital-transformation",
+      "from": "web3-decentralization-paradox",
+      "to": "blockchain-technology",
       "type": "extends"
     },
     {
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "trajectory-contingent-matching",
-      "type": "relates-to"
+      "from": "web3-decentralization-paradox",
+      "to": "blockchain",
+      "type": "extends"
     },
     {
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "digital-innovation-under-investor-constraints",
-      "type": "relates-to"
-    },
-    {
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "financial-architecture-as-digital-transformation-barrier",
-      "type": "relates-to"
-    },
-    {
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "ecosystem-orchestration",
-      "type": "relates-to"
-    },
-    {
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "ecosystem-participation",
-      "type": "relates-to"
-    },
-    {
-      "from": "digital-transformation-roi-measurement-architecture",
+      "from": "web3-decentralization-paradox",
       "to": "digital-business-ecosystem",
       "type": "relates-to"
     },
     {
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "network-centric-digital-strategy",
+      "from": "web3-decentralization-paradox",
+      "to": "ecosystem-orchestration",
+      "type": "contrasts-with"
+    },
+    {
+      "from": "web3-decentralization-paradox",
+      "to": "closed-system-platform",
+      "type": "contrasts-with"
+    },
+    {
+      "from": "web3-decentralization-paradox",
+      "to": "technology-organization-policy-nexus",
       "type": "relates-to"
     },
     {
-      "from": "digital-transformation-roi-measurement-architecture",
-      "to": "low-level-design-as-digital-transformation-substrate",
+      "from": "web3-decentralization-paradox",
+      "to": "digital-disruption-as-political-disruption",
       "type": "relates-to"
-    },
-    {
-      "from": "platform-vs-merchant-model-ecommerce",
-      "to": "platform-model",
-      "type": "extends"
-    },
-    {
-      "from": "platform-vs-merchant-model-ecommerce",
-      "to": "merchant-model",
-      "type": "extends"
-    },
-    {
-      "from": "platform-vs-merchant-model-ecommerce",
-      "to": "merchant-models",
-      "type": "extends"
-    },
-    {
-      "from": "platform-vs-merchant-model-ecommerce",
-      "to": "amazon",
-      "type": "related"
-    },
-    {
-      "from": "platform-vs-merchant-model-ecommerce",
-      "to": "network-effects",
-      "type": "related"
-    },
-    {
-      "from": "digital-transformation-4-module-course-outline",
-      "to": "the-digital-matrix-framework",
-      "type": "extends"
-    },
-    {
-      "from": "digital-transformation-4-module-course-outline",
-      "to": "stub-driving-digital-strategy-a-guide-to-reimagining-your-1",
-      "type": "extends"
-    },
-    {
-      "from": "digital-transformation-4-module-course-outline",
-      "to": "stub-the-digital-matrix-new-rules-for-business-transformation-1",
-      "type": "extends"
-    },
-    {
-      "from": "digital-transformation-4-module-course-outline",
-      "to": "digital-matrix",
-      "type": "extends"
-    },
-    {
-      "from": "digital-transformation-4-module-course-outline",
-      "to": "three-winning-moves",
-      "type": "extends"
-    },
-    {
-      "from": "digital-transformation-4-module-course-outline",
-      "to": "three-phases-of-transformation",
-      "type": "extends"
-=======
-      "from": "ai-ethics",
-      "to": "artificial-intelligence",
-      "type": "is_related_to"
-    },
-    {
-      "from": "learning",
-      "to": "artificial-intelligence",
-      "type": "is_sub_problem_of"
-    },
-    {
-      "from": "perception",
-      "to": "artificial-intelligence",
-      "type": "is_sub_problem_of"
-    },
-    {
-      "from": "predictive-ai",
-      "to": "artificial-intelligence",
-      "type": "is_application_of"
-    },
-    {
-      "from": "prescriptive-ai",
-      "to": "artificial-intelligence",
-      "type": "is_application_of"
-    },
-    {
-      "from": "index",
-      "to": "synthesized/warfare-c2-architecture-as-digital-transformation-problem",
-      "type": "references"
-    },
-    {
-      "from": "asymmetric-runway",
-      "to": "incumbents-curse",
-      "type": "is_a_consequence_of"
-    },
-    {
-      "from": "cross-side-network-effects",
-      "to": "platform-business-model",
-      "type": "is_a_key_feature_of"
-    },
-    {
-      "from": "disruption-digital",
-      "to": "information-product-separation",
-      "type": "driven_by"
-    },
-    {
-      "from": "incumbents-curse",
-      "to": "transformation-trough",
-      "type": "causes"
-    },
-    {
-      "from": "incumbents-curse",
-      "to": "asymmetric-runway",
-      "type": "is_related_to"
-    },
-    {
-      "from": "market-overshooting",
-      "to": "technology-improvement-rate",
-      "type": "related_to"
-    },
-    {
-      "from": "market-overshooting",
-      "to": "customer-absorption-rate",
-      "type": "related_to"
-    },
-    {
-      "from": "platform-business-model",
-      "to": "cross-side-network-effects",
-      "type": "characterized_by"
-    },
-    {
-      "from": "platform-dynamics",
-      "to": "uber",
-      "type": "is_exemplified_by"
-    },
-    {
-      "from": "transformation-trough",
-      "to": "incumbents-curse",
-      "type": "is_a_manifestation_of"
-    },
-    {
-      "from": "apple",
-      "to": "itunes",
-      "type": "launched"
-    },
-    {
-      "from": "digital-equipment-corporation",
-      "to": "market-overshooting",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "ge",
-      "to": "outcome-based-business-model",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "general-electric",
-      "to": "incumbents-curse",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "lemonade",
-      "to": "product-leadership",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "microsoft",
-      "to": "bundling-attack-envelopment",
-      "type": "used"
-    },
-    {
-      "from": "microsoft",
-      "to": "real-networks",
-      "type": "competed_with"
-    },
-    {
-      "from": "monster-com",
-      "to": "platform-business-model",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "paypal",
-      "to": "platform-subsidization",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "real-networks",
-      "to": "microsoft",
-      "type": "was_attacked_by"
-    },
-    {
-      "from": "uber",
-      "to": "platform-dynamics",
-      "type": "established"
-    },
-    {
-      "from": "upi",
-      "to": "platform-subsidization",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "upi",
-      "to": "market-tipping",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "digital-transformation-profit-dip",
-      "to": "new-york-times",
-      "type": "exemplified_by"
-    },
-    {
-      "from": "platform-business-model",
-      "to": "typology-of-business-models",
-      "type": "is_a_type_of"
-    },
-    {
-      "from": "product-business-model",
-      "to": "typology-of-business-models",
-      "type": "is_a_type_of"
-    },
-    {
-      "from": "service-business-model",
-      "to": "typology-of-business-models",
-      "type": "is_a_type_of"
-    },
-    {
-      "from": "solution-business-model",
-      "to": "typology-of-business-models",
-      "type": "is_a_type_of"
-    },
-    {
-      "from": "typology-of-business-models",
-      "to": "product-business-model",
-      "type": "includes"
-    },
-    {
-      "from": "typology-of-business-models",
-      "to": "service-business-model",
-      "type": "includes"
-    },
-    {
-      "from": "typology-of-business-models",
-      "to": "platform-business-model",
-      "type": "includes"
-    },
-    {
-      "from": "typology-of-business-models",
-      "to": "solution-business-model",
-      "type": "includes"
-    },
-    {
-      "from": "hdfc-ergo-here-health-ecosystem",
-      "to": "solution-business-model",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "new-york-times",
-      "to": "digital-transformation-profit-dip",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "ping-an-ecosystem",
-      "to": "solution-business-model",
-      "type": "is_an_example_of"
-    },
-    {
-      "from": "index",
-      "to": "concepts/ai-ethics",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/asymmetric-runway",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/bundling-attack-envelopment",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/cross-side-network-effects",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/customer-absorption-rate",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/digital-transformation-profit-dip",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/disruption-digital",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/incumbents-curse",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/information-product-separation",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/investor-valuation-focus",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/learning",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/market-overshooting",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/market-tipping",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/operational-excellence",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/outcome-based-business-model",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/perception",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/platform-dynamics",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/platform-subsidization",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/predictive-ai",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/prescriptive-ai",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/product-business-model",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/product-leadership",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/service-business-model",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/technology-improvement-rate",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/transformation-trough",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "concepts/typology-of-business-models",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "entities/hdfc-ergo-here-health-ecosystem",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "entities/lemonade",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "entities/monster-com",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "entities/paypal",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "entities/ping-an-ecosystem",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "entities/real-networks",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "entities/upi",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "stubs/stub-bmi-claude-structure",
-      "type": "references"
-    },
-    {
-      "from": "index",
-      "to": "stubs/stub-dt-data",
-      "type": "references"
->>>>>>> 12c0d40 (feedback)
     }
   ]
 }

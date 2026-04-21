@@ -1,6 +1,6 @@
 # Wiki Index
 
-Master catalog — 810 pages · last rebuilt 2026-04-21
+Master catalog — 813 pages · last rebuilt 2026-04-21
 
 ## Persona Pages (8)
 
@@ -799,17 +799,20 @@ Master catalog — 810 pages · last rebuilt 2026-04-21
 - [[entities/zipcar|Zipcar]] — A car-sharing company that was acquired by the vehicle rental company Avis for $500 million.
 - [[entities/zoom|Zoom]] — A video communication platform that achieved success through user-centric design, simplicity, reliability, and a freemiu
 
-## Query-Synthesized Pages (11)
+## Query-Synthesized Pages (14)
 
 - [[synthesized/authentication-as-ecosystem-trust-infrastructure|Authentication as Ecosystem Trust Infrastructure]] — Authentication is the implicit trust infrastructure underlying ecosystem orchestration — as foundational to digital busi
 - [[synthesized/code-as-both-enabler-and-constraint-in-digital-transformation|Code as Both Enabler and Constraint in Digital Transformation]] — Most discussions about coding and digital transformation treat code as a tool of change—the means by which firms build n
 - [[synthesized/cookie-deprecation-as-ecosystem-inflection-point|Cookie Deprecation as Ecosystem-Level Strategic Inflection Point]] — The HTTP cookie — a kilobyte-sized text file placed in a browser to track user identity across sessions — can be underst
 - [[synthesized/digital-disruption-as-political-disruption|Digital Disruption as Political Disruption: When Platform Business Models Collide with Regulatory Frameworks]] — Digital disruption and political disruption are often the **same event viewed from different institutional angles**. The
+- [[synthesized/digital-transformation-4-module-course-outline|Digital Transformation: 4-Module Course Outline (68-Minute Architecture)]] — A unified course architecture synthesising Venkatraman's Digital Matrix framework, Gupta's all-in digital strategy thesi
+- [[synthesized/digital-transformation-roi-measurement-architecture|Digital Transformation ROI: A Four-Layer Measurement Architecture]] — Conventional ROI (net benefit / cost over a fixed horizon) breaks down for digital transformation for three structural r
 - [[synthesized/ecosystem-competition-and-antitrust-misalignment|Ecosystem Competition and the Structural Misalignment of Antitrust Policy]] — Venkatraman's *Digital Matrix* establishes that the fundamental unit of competition in the digital economy is not the in
 - [[synthesized/financial-architecture-as-digital-transformation-barrier|Financial Architecture as a Barrier to Digital Transformation]] — Firms exist because of transaction costs (Coase), but their ability to transform digitally is constrained by how financi
 - [[synthesized/history-as-defamiliarization-engine|History as Defamiliarization Engine: How Temporal Analogy Powers Digital Strategy Pedagogy]] — Deepa Mani's use of historical analogy in teaching digital strategy is not merely illustrative decoration — it functions
 - [[synthesized/homophily-trap-in-network-driven-digital-scaling|The Homophily Trap in Network-Driven Digital Scaling]] — Wherever digital transformation relies on network-driven scaling—whether in viral marketing, platform economics, or gras
 - [[synthesized/low-level-design-as-digital-transformation-substrate|Low-Level System Design as the Hidden Substrate of Digital Transformation]] — Most digital transformation literature operates at the strategic layer—ecosystem positioning, platform governance, coope
+- [[synthesized/platform-vs-merchant-model-ecommerce|Platform vs. Merchant Models in E-Commerce: A Six-Dimensional Comparison]] — The merchant and platform models represent two fundamentally different logics for how an e-commerce intermediary creates
 - [[synthesized/warfare-c2-architecture-as-digital-transformation-problem|Warfare C2 Architecture as a Digital Transformation Problem]] — The Digital Matrix framework describes a world of three player types (digital giants, industry incumbents, tech entrepre
 - [[synthesized/web3-decentralization-paradox|Web3's Decentralization Paradox: Challenging and Depending on Platform Control]] — Web3 — the loosely defined movement toward blockchain-based, decentralized internet infrastructure — positions itself as
 
@@ -826,14 +829,3 @@ Master catalog — 810 pages · last rebuilt 2026-04-21
 - [[stubs/stub-platform-structures|Platform Structures]] — This source is a lecture presentation (FRNT – Session 6 by Vishal K) covering platform-mediated business networks as the
 - [[stubs/stub-the-digital-matrix-new-rules-for-business-transformation-1|The Digital Matrix: New Rules for Business Transformation Through Technology]] — Written by Venkat Venkatraman, *The Digital Matrix* provides a strategic framework and practical step-by-step guide for 
 - [[stubs/stub-web-30-metaverse|Web 3.0 Metaverse]] — This source is a lecture/presentation by Vishal K from a "Frontier Tech – Session 3" series, covering the evolution of t
-<<<<<<< HEAD
-
-- [[synthesized/warfare-c2-architecture-as-digital-transformation-problem|Warfare C2 Architecture as a Digital Transformation Problem]] — synthesized from query
-
-- [[synthesized/digital-transformation-roi-measurement-architecture|Digital Transformation ROI: A Four-Layer Measurement Architecture]] — synthesized from query
-
-- [[synthesized/platform-vs-merchant-model-ecommerce|Platform vs. Merchant Models in E-Commerce: A Six-Dimensional Comparison]] — synthesized from query
-
-- [[synthesized/digital-transformation-4-module-course-outline|Digital Transformation: 4-Module Course Outline (68-Minute Architecture)]] — synthesized from query
-=======
->>>>>>> 12c0d40 (feedback)
