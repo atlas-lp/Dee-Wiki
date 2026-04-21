@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Runtime assets — baked in from git working tree
 COPY api/     ./api/
 COPY data/    ./data/
-COPY Vault/   ./Vault/
+COPY prof-bhagwan-hybrid-demo/   ./prof-bhagwan-hybrid-demo/
 
 # Pre-download fastembed model at build time so Cloud Run startup never hits the network.
 RUN python -c "\
