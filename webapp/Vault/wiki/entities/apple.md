@@ -2,6 +2,8 @@
 type: entity
 aliases: [Apple]
 relationships:
+  - target: itunes
+    type: launched
   - target: platform-based-model
     type: exemplifies
   - target: ios
@@ -30,3 +32,6 @@ A technology company whose platform-based model for the iPhone creates high swit
 
 ---
 *Also referenced in: Deepa Mani Knowledge Base*
+
+---
+*Also referenced in: Bmi   Claude   Structure*

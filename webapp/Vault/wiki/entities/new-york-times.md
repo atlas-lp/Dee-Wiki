@@ -2,6 +2,8 @@
 type: entity
 aliases: [New York Times (NYT)]
 relationships:
+  - target: digital-transformation-profit-dip
+    type: is_an_example_of
   - target: paywall-business-model
     type: implemented
   - target: digital-transition
@@ -21,3 +23,6 @@ A media company that implemented a paywall in 2011, successfully converting its 
 
 ---
 *Extracted from: Driving Digital Strategy   A Guide To Reimagining Your (1)*
+
+---
+*Also referenced in: Dt Data*

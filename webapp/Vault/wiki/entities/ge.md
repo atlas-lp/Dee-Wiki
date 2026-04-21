@@ -2,6 +2,8 @@
 type: entity
 aliases: [General Electric (GE)]
 relationships:
+  - target: outcome-based-business-model
+    type: is_an_example_of
   - target: predix
     type: created
   - target: additive-manufacturing
@@ -45,3 +47,6 @@ A company that developed the Predix operating system for the industrial internet
 
 ---
 *Also referenced in: The Digital Matrix New Rules For Business Transformation (1)*
+
+---
+*Also referenced in: Bmi   Claude   Structure*

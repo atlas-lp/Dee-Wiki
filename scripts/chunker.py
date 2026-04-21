@@ -212,34 +212,32 @@ def extract_text_from_pdf(pdf_path, gemini_api_key):
 # Text chunking
 # ---------------------------------------------------------------------------
 
-def chunk_text(text, source_path, chunk_size=500, overlap=50):
-    """Split text into overlapping chunks of ~chunk_size words."""
-    words = text.split()
-    if not words:
+def chunk_text(text, source_path, chunk_size=6000, chunk_overlap=300):
+    """Split text into overlapping chunks using RecursiveCharacterTextSplitter (~1200 words each)."""
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+
+    if not text or not text.strip():
         return []
 
+    splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=chunk_overlap,
+        length_function=len,
+    )
+    raw_chunks = splitter.split_text(text)
+
     chunks = []
-    i = 0
-    chunk_id = 0
-
-    while i < len(words):
-        chunk_words = words[i : i + chunk_size]
-        chunk_content = " ".join(chunk_words)
-
+    for chunk_id, raw_chunk in enumerate(raw_chunks):
         chunks.append(
             {
                 "id": f"{Path(source_path).stem}_chunk_{chunk_id:04d}",
                 "source": str(source_path),
                 "chunk_index": chunk_id,
-                "content": chunk_content,
-                "word_count": len(chunk_words),
+                "content": raw_chunk,
+                "word_count": len(raw_chunk.split()),
                 "type": "rag",
             }
         )
-
-        step = max(chunk_size - overlap, 1)
-        i += step
-        chunk_id += 1
 
     return chunks
 
@@ -248,7 +246,7 @@ def chunk_text(text, source_path, chunk_size=500, overlap=50):
 # Public API
 # ---------------------------------------------------------------------------
 
-def chunk_pdf(pdf_path, gemini_api_key, chunk_size=500, overlap=50, md_output_dir=None):
+def chunk_pdf(pdf_path, gemini_api_key, chunk_size=6000, chunk_overlap=300, md_output_dir=None):
     """Extract text from PDF, save as .md, return chunks."""
     pages = extract_text_from_pdf(pdf_path, gemini_api_key)
 
@@ -265,14 +263,14 @@ def chunk_pdf(pdf_path, gemini_api_key, chunk_size=500, overlap=50, md_output_di
     md_path.write_text(full_text, encoding="utf-8")
     print(f"  Saved markdown → {md_path}")
 
-    chunks = chunk_text(full_text, pdf_path, chunk_size, overlap)
+    chunks = chunk_text(full_text, pdf_path, chunk_size, chunk_overlap)
     return chunks, full_text, len(pages)
 
 
-def chunk_markdown(md_path, chunk_size=500, overlap=50):
+def chunk_markdown(md_path, chunk_size=6000, chunk_overlap=300):
     """Read a markdown file and chunk it."""
     text = Path(md_path).read_text(encoding="utf-8")
-    chunks = chunk_text(text, md_path, chunk_size, overlap)
+    chunks = chunk_text(text, md_path, chunk_size, chunk_overlap)
     return chunks, text
 
 

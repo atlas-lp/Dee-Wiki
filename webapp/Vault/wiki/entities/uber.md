@@ -2,6 +2,8 @@
 type: entity
 aliases: [Uber]
 relationships:
+  - target: platform-dynamics
+    type: established
   - target: native-apps
     type: is_an_example_of
   - target: platform-mediated-business-networks
@@ -34,3 +36,6 @@ A company whose early growth, driven by word-of-mouth and a focused city-by-city
 
 ---
 *Also referenced in: Web 3.0   Metaverse*
+
+---
+*Also referenced in: Bmi   Claude   Structure*

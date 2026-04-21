@@ -18,3 +18,6 @@ A framework that defines the way a firm creates, delivers, and captures value, w
 
 ---
 *Extracted from: Driving Digital Strategy   A Guide To Reimagining Your (1)*
+
+---
+*Also referenced in: Bmi   Claude   Structure*

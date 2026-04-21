@@ -2,6 +2,8 @@
 type: entity
 aliases: [General Electric (GE)]
 relationships:
+  - target: incumbents-curse
+    type: is_an_example_of
   - target: predix
     type: created
   - target: digital-twin
@@ -30,3 +32,6 @@ An industrial company that transformed its business by developing digital capabi
 
 ---
 *Also referenced in: Deepa Mani Knowledge Base*
+
+---
+*Also referenced in: Bmi   Claude   Structure*

@@ -103,3 +103,15 @@ Append-only chronological record of ingests, queries, and wiki updates.
 ## [2026-04-18] synthesize | warfare-c2-architecture-as-digital-transformation-problem
 - Pages created: warfare-c2-architecture-as-digital-transformation-problem.md
 - From query: In digitally transformed warfare ecosystems—where AI-driven targeting, cyber-physical systems, and real-time data fusion compress the decision cycle—how can states design command-and-control architectures that preserve human strategic judgment while mitigating risks of adversarial manipulation, cascading system failures, and unintended escalation triggered by autonomous or semi-autonomous decision systems?
+
+## [2026-04-21 15:32 IST] auto_wiki_builder | Automated wiki page generation complete
+- model: claude-opus-4-6
+- stubs_written: 2
+- index_rebuilt: True
+- elapsed_s: 25.8
+
+## [2026-04-21 15:33 IST] auto_wiki_builder | Automated wiki page generation complete
+- model: claude-opus-4-6
+- stubs_written: 0
+- index_rebuilt: True
+- elapsed_s: 1.0

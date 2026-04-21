@@ -2,6 +2,10 @@
 type: entity
 aliases: [Microsoft]
 relationships:
+  - target: bundling-attack-envelopment
+    type: used
+  - target: real-networks
+    type: competed_with
   - target: microsoft-teams
     type: owns
   - target: office-suite
@@ -27,3 +31,6 @@ A technology company that uses platform envelopment as a 'tried and tested metho
 
 ---
 *Also referenced in: The Digital Matrix New Rules For Business Transformation (1)*
+
+---
+*Also referenced in: Bmi   Claude   Structure*

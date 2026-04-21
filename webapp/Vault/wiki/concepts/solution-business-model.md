@@ -2,6 +2,8 @@
 type: concept
 aliases: [Solution Business Model]
 relationships:
+  - target: typology-of-business-models
+    type: is_a_type_of
   - target: four-digital-business-models
     type: part_of
   - target: platform-business-model
@@ -21,3 +23,6 @@ A business model centered on providing customizable products, services, or a mix
 
 ---
 *Extracted from: The Digital Matrix New Rules For Business Transformation (1)*
+
+---
+*Also referenced in: Dt Data*

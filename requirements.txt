@@ -1,10 +1,9 @@
-# Local development — ingest scripts
-PyMuPDF>=1.24.0
-python-dotenv>=1.0.0
-requests>=2.31.0
+flask==3.1.1
+anthropic>=0.45.0
+openai>=1.0.0
 rank-bm25==0.2.2
 numpy>=1.26.0
+requests>=2.31.0
 faiss-cpu
-flask
 fastembed
-
+google-genai>=1.0.0

@@ -2,6 +2,8 @@
 type: entity
 aliases: [Digital Equipment Corporation (DEC)]
 relationships:
+  - target: market-overshooting
+    type: is_an_example_of
   - target: apple-ii
     type: was_disrupted_by
   - target: incumbent-inertia
@@ -21,3 +23,6 @@ An incumbent company, referred to as 'digital', that sold high-margin computers 
 
 ---
 *Extracted from: Deepa Mani Knowledge Base*
+
+---
+*Also referenced in: Bmi   Claude   Structure*

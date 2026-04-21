@@ -777,7 +777,7 @@ def cmd_sync_and_pr():
 
     # Step 3: Check if there are any git changes to commit
     result = subprocess.run(
-        ["git", "status", "--porcelain", "--", "Vault/wiki/"],
+        ["git", "status", "--porcelain", "--", str(WIKI_DIR.relative_to(PROJECT_ROOT))],
         capture_output=True, text=True, cwd=PROJECT_ROOT,
     )
     if not result.stdout.strip():
@@ -793,7 +793,7 @@ def cmd_sync_and_pr():
 
     # Step 5: Stage and commit
     subprocess.run(
-        ["git", "add", "Vault/wiki/"],
+        ["git", "add", str(WIKI_DIR.relative_to(PROJECT_ROOT))],
         cwd=PROJECT_ROOT, check=True,
     )
 

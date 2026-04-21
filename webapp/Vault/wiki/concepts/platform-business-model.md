@@ -2,6 +2,10 @@
 type: concept
 aliases: [Platform Business Model]
 relationships:
+  - target: typology-of-business-models
+    type: is_a_type_of
+  - target: cross-side-network-effects
+    type: characterized_by
   - target: digital-strategy
     type: is_a_type_of
   - target: goldman-sachs
@@ -33,3 +37,9 @@ A business strategy that involves shifting from only selling one's own products 
 
 ---
 *Also referenced in: Deepa Mani Knowledge Base*
+
+---
+*Also referenced in: Bmi   Claude   Structure*
+
+---
+*Also referenced in: Dt Data*

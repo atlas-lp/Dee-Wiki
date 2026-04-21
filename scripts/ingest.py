@@ -51,6 +51,11 @@ PAGE_THRESHOLD = 20
 
 SUPPORTED_EXTENSIONS = {".md", ".txt", ".pdf"}
 
+# Gemini embedding-2-preview has a 2048-token (~7500 char) input limit.
+# 6000 chars (~1200 words) keeps chunks well inside that window.
+CHUNK_SIZE    = 6000
+CHUNK_OVERLAP = 300
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -105,7 +110,7 @@ def cmd_scan():
     print(f"{'='*70}\n")
 
     for f in files:
-        rel = str(f.relative_to(PROJECT_ROOT))
+        rel = str(f.relative_to(VAULT))
 
         # Check if already ingested via structured tracking
         already = rel in ingested
@@ -114,7 +119,7 @@ def cmd_scan():
         print(f" {rel} {status}")
 
         if not already:
-            rag_files.append((f, words, pages))
+            rag_files.append((f))
 
     print(f"\n{'─'*70}")
     print(f"  New files: {len(wiki_files)} wiki + {len(rag_files)} RAG")
@@ -141,10 +146,10 @@ def cmd_process(file_path, gemini_key):
     if ext == ".pdf":
         # Save converted markdown to research_papers_md/ folder
         md_output = VAULT / "raw" / "research_papers_md"
-        chunks, text, page_count = chunk_pdf(str(fp), gemini_key, md_output_dir=str(md_output))
+        chunks, text, page_count = chunk_pdf(str(fp), gemini_key, chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP, md_output_dir=str(md_output))
         print(f"  Extracted {page_count} pages → {len(chunks)} chunks")
     elif ext in (".md", ".txt"):
-        chunks, text = chunk_markdown(str(fp))
+        chunks, text = chunk_markdown(str(fp), chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
         print(f"  {len(chunks)} chunks")
     else:
         print(f"  Unsupported: {ext}")
@@ -188,9 +193,12 @@ def cmd_process(file_path, gemini_key):
     print(f"  │ Abstract hint: {abstract_hint}…")
     print(f"  └────────────────────────────────────────────────")
 
-    # BUG 7 fix: Track in ingested.json
+    # Track in ingested.json — key relative to VAULT so vault renames don't break it
     ingested = get_already_ingested()
-    rel_key = str(rel_source)
+    try:
+        rel_key = str(fp.relative_to(VAULT.resolve()))
+    except ValueError:
+        rel_key = fp.name
     ingested[rel_key] = {
         "chunks": len(chunks),
         "words": len(text.split()),
@@ -207,7 +215,7 @@ def cmd_process_all(gemini_key):
 
     rag_files = []
     for f in files:
-        rel = str(f.relative_to(PROJECT_ROOT))
+        rel = str(f.relative_to(VAULT))
         if rel not in ingested:
             rag_files.append(f)
 

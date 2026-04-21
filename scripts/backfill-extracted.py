@@ -28,8 +28,9 @@ except ImportError:
 VAULT        = PROJECT_ROOT / os.environ.get("WIKI_VAULT_NAME", "webapp/Vault")
 WIKI_DIR     = VAULT / "wiki"
 DATA_DIR     = PROJECT_ROOT / "data"
-CHUNKS_FILE  = DATA_DIR / "chunks.json"
+CHUNKS_FILE    = DATA_DIR / "chunks.json"
 EXTRACTED_FILE = DATA_DIR / "extracted.json"
+INGESTED_FILE  = DATA_DIR / "ingested.json"
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 
@@ -55,6 +56,22 @@ def load_extracted_hashes() -> set:
 def save_extracted_hashes(hashes: set):
     EXTRACTED_FILE.write_text(
         json.dumps(sorted(hashes), indent=2), encoding="utf-8"
+    )
+
+
+def load_ingested() -> dict:
+    if not INGESTED_FILE.exists():
+        return {}
+    try:
+        return json.loads(INGESTED_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def save_ingested(ingested: dict):
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    INGESTED_FILE.write_text(
+        json.dumps(ingested, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
 
@@ -182,17 +199,45 @@ def backfill(dry_run: bool = False):
     print(f"New hashes to add         : {len(new_hashes)}")
     print(f"Total after backfill      : {len(already_extracted | new_hashes)}")
 
-    # 5. Write
+    # 5. Populate ingested.json from all unique sources in chunks.json
+    # Group chunks by source path so ingest.py --process-all skips them.
+    from collections import defaultdict
+    chunks_by_source: dict = defaultdict(list)
+    for c in all_chunks:
+        chunks_by_source[c["source"]].append(c)
+
+    ingested = load_ingested()
+    ingested_new = 0
+    for src_path_str, src_chunks in chunks_by_source.items():
+        try:
+            rel_key = str(Path(src_path_str).resolve().relative_to(VAULT.resolve()))
+        except ValueError:
+            rel_key = Path(src_path_str).name
+        if rel_key not in ingested:
+            word_count = sum(c.get("word_count", len(c["content"].split())) for c in src_chunks)
+            ingested[rel_key] = {
+                "chunks": len(src_chunks),
+                "words": word_count,
+                "timestamp": "backfilled",
+            }
+            ingested_new += 1
+
+    print(f"\nIngested.json: {ingested_new} new source(s) added ({len(ingested)} total)")
+
+    # 6. Write
     if dry_run:
         print("\n[dry-run] No changes written.")
         return
 
     if not new_hashes:
         print("\nNothing new to add — extracted.json is already up to date.")
-        return
+    else:
+        save_extracted_hashes(already_extracted | new_hashes)
+        print(f"✓ Saved {len(already_extracted | new_hashes)} hashes → {EXTRACTED_FILE}")
 
-    save_extracted_hashes(already_extracted | new_hashes)
-    print(f"\n✓ Saved {len(already_extracted | new_hashes)} hashes → {EXTRACTED_FILE}")
+    if ingested_new:
+        save_ingested(ingested)
+        print(f"✓ Saved {len(ingested)} entries → {INGESTED_FILE}")
 
 
 if __name__ == "__main__":
