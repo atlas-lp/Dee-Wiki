@@ -288,25 +288,42 @@ class WikiSearchIndex:
         n           = len(self.pages)
         bm25_scores = np.array(self.bm25.get_scores(query.lower().split()), dtype=np.float32)
         bm25_max    = bm25_scores.max() or 1.0
-        bm25_norm   = bm25_scores / bm25_max
+        # --- RRF parameters ---
+        k_rrf   = 60
+        w_bm25  = 0.3
+        w_sem   = 0.7
 
-        hybrid = bm25_norm
+        # --- BM25 ranking ---
+        bm25_rank = np.argsort(-bm25_scores)  # descending
+
+        # Initialize RRF scores
+        rrf_scores = np.zeros(n, dtype=np.float32)
+
+        # Add BM25 contribution
+        for rank, idx in enumerate(bm25_rank):
+            rrf_scores[idx] += w_bm25 * (1.0 / (k_rrf + rank))
+
+
+        # --- Semantic ranking ---
         if self.faiss_index is not None:
             try:
-                model      = _get_wiki_embed_model()
-                q_emb      = _encode(model, [query])
+                model = _get_wiki_embed_model()
+                q_emb = _encode(model, [query])
+
                 sem_scores, sem_idx = self.faiss_index.search(q_emb, n)
-                sem_norm   = np.zeros(n, dtype=np.float32)
-                for i, s in zip(sem_idx[0], sem_scores[0]):
-                    if 0 <= i < n:
-                        sem_norm[i] = float(s)
-                hybrid = 0.2 * bm25_norm + 0.8 * sem_norm
+
+                # sem_idx is already ranked by similarity
+                for rank, idx in enumerate(sem_idx[0]):
+                    if 0 <= idx < n:
+                        rrf_scores[idx] += w_sem * (1.0 / (k_rrf + rank))
+
             except Exception as e:
                 print(f"[WikiSearch] Semantic search failed: {e} — BM25-only")
 
-        top_idx = np.argsort(hybrid)[::-1][:top_k]
-        return [self.pages[i] for i in top_idx]
 
+        # --- Final ranking ---
+        top_idx = np.argsort(rrf_scores)[::-1][:top_k]
+        return [self.pages[i] for i in top_idx]
 
 # ---------------------------------------------------------------------------
 # KnowledgeBase — thread-safe in-memory state
