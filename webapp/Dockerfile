@@ -11,8 +11,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Runtime assets — baked in from git working tree
 COPY api/     ./api/
 COPY data/    ./data/
-COPY models/  ./models/
-COPY Vault/   ./Vault/
+COPY prof-bhagwan-hybrid-demo/   ./prof-bhagwan-hybrid-demo/
+
+# Pre-download fastembed model at build time so Cloud Run startup never hits the network.
+RUN python -c "\
+from fastembed import TextEmbedding; \
+TextEmbedding('BAAI/bge-base-en-v1.5', cache_dir='/app/models')" \
+  && echo "fastembed model cached."
 
 ENV PORT=8080
 EXPOSE 8080
