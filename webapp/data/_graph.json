@@ -10395,6 +10395,21 @@
         "trust"
       ],
       "path": "wiki/synthesized/adaptive-governance-mesh-architecture.md"
+    },
+    "digital-matrix-and-digital-transformation": {
+      "type": "synthesized",
+      "title": "The Digital Matrix as a Framework for Digital Transformation",
+      "aliases": [
+        "Digital Matrix Digital Transformation Link"
+      ],
+      "tags": [
+        "digital-transformation",
+        "framework",
+        "strategy",
+        "business-transformation",
+        "strategic-framework"
+      ],
+      "path": "wiki/synthesized/digital-matrix-and-digital-transformation.md"
     }
   },
   "edges": [
@@ -21212,6 +21227,31 @@
       "from": "adaptive-governance-mesh-architecture",
       "to": "technology-organization-policy-nexus",
       "type": "relates-to"
+    },
+    {
+      "from": "digital-matrix-and-digital-transformation",
+      "to": "the-digital-matrix-framework",
+      "type": "extends"
+    },
+    {
+      "from": "digital-matrix-and-digital-transformation",
+      "to": "three-phases-of-transformation",
+      "type": "extends"
+    },
+    {
+      "from": "digital-matrix-and-digital-transformation",
+      "to": "three-winning-moves",
+      "type": "extends"
+    },
+    {
+      "from": "digital-matrix-and-digital-transformation",
+      "to": "strengthening-the-core-and-building-for-the-future",
+      "type": "extends"
+    },
+    {
+      "from": "digital-matrix-and-digital-transformation",
+      "to": "the-digital-matrix",
+      "type": "extends"
     }
   ]
 }
