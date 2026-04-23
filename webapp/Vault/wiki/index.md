@@ -1,6 +1,6 @@
 # Wiki Index
 
-Master catalog — 813 pages · last rebuilt 2026-04-21
+Master catalog — 813 pages · last rebuilt 2026-04-23
 
 ## Persona Pages (8)
 
@@ -801,6 +801,7 @@ Master catalog — 813 pages · last rebuilt 2026-04-21
 
 ## Query-Synthesized Pages (14)
 
+- [[synthesized/ai-governance-decentralization-paradox|The AI Governance Paradox: Decentralizing Operations, Centralizing Accountability]] — Any enterprise that decentralizes operational decisions to AI agents — autonomous workflows, real-time inference engines
 - [[synthesized/authentication-as-ecosystem-trust-infrastructure|Authentication as Ecosystem Trust Infrastructure]] — Authentication is the implicit trust infrastructure underlying ecosystem orchestration — as foundational to digital busi
 - [[synthesized/code-as-both-enabler-and-constraint-in-digital-transformation|Code as Both Enabler and Constraint in Digital Transformation]] — Most discussions about coding and digital transformation treat code as a tool of change—the means by which firms build n
 - [[synthesized/cookie-deprecation-as-ecosystem-inflection-point|Cookie Deprecation as Ecosystem-Level Strategic Inflection Point]] — The HTTP cookie — a kilobyte-sized text file placed in a browser to track user identity across sessions — can be underst
@@ -828,5 +829,3 @@ Master catalog — 813 pages · last rebuilt 2026-04-21
 - [[stubs/stub-platform-structures|Platform Structures]] — This source is a lecture presentation (FRNT – Session 6 by Vishal K) covering platform-mediated business networks as the
 - [[stubs/stub-the-digital-matrix-new-rules-for-business-transformation-1|The Digital Matrix: New Rules for Business Transformation Through Technology]] — Written by Venkat Venkatraman, *The Digital Matrix* provides a strategic framework and practical step-by-step guide for 
 - [[stubs/stub-web-30-metaverse|Web 3.0 Metaverse]] — This source is a lecture/presentation by Vishal K from a "Frontier Tech – Session 3" series, covering the evolution of t
-
-- [[synthesized/ai-governance-decentralization-paradox|The AI Governance Paradox: Decentralizing Operations, Centralizing Accountability]] — synthesized from query
