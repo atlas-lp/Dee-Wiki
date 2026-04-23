@@ -46,7 +46,8 @@ except ImportError:
 _vault_name = os.environ.get("WIKI_VAULT_NAME", "webapp/Vault")
 VAULT = PROJECT_ROOT / _vault_name
 WIKI_DIR = VAULT / "wiki"
-CHUNKS_FILE = PROJECT_ROOT / "data" / "chunks.json"
+_tagged = PROJECT_ROOT / "data" / "chunks_tagged.json"
+CHUNKS_FILE = _tagged if _tagged.exists() else PROJECT_ROOT / "data" / "chunks.json"
 WEBAPP_DATA = PROJECT_ROOT / "webapp" / "data"
 
 

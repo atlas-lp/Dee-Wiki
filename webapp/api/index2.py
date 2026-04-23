@@ -130,8 +130,9 @@ def chat():
     if not user_message:
         return jsonify({"error": "Empty message"}), 400
 
-    pdf_b64  = data.get("pdf_base64", "")
-    kb       = _get_kb()
+    pdf_b64     = data.get("pdf_base64", "")
+    bloom_level = data.get("bloom_level") or None
+    kb          = _get_kb()
 
     def generate():
         nonlocal user_message
@@ -148,7 +149,7 @@ def chat():
                     _pdf_err_msg = json.dumps({"text": "*(PDF extraction failed — answering without it.)*\n\n"})
                     yield f"data: {_pdf_err_msg}\n\n"
 
-            for event_type, data in query_streaming(user_message, kb, wiki_client, main_client):
+            for event_type, data in query_streaming(user_message, kb, wiki_client, main_client, bloom_level=bloom_level):
                 if event_type == "text":
                     yield f"data: {json.dumps({'text': data})}\n\n"
                 elif event_type == "done":

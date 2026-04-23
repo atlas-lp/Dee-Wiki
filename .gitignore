@@ -54,4 +54,4 @@ venv/
 .venv/
 env/
 
-models/
+webapp/models/

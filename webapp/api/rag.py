@@ -75,21 +75,49 @@ def _get_query_embedding(query: str):
 # RAG search
 # ---------------------------------------------------------------------------
 
-def do_rag_search(query: str, chunks: list, faiss_index, top_k: int = 5) -> list:
-    """FAISS inner-product search over RAG chunks (vectors pre-normalised at index build time)."""
+BLOOMS_ORDER = {
+    "Remember": 1, "Understand": 2, "Apply": 3,
+    "Analyze": 4, "Evaluate": 5, "Create": 6,
+}
+
+
+def do_rag_search(
+    query: str,
+    chunks: list,
+    faiss_index,
+    top_k: int = 5,
+    bloom_level: str | None = None,
+) -> list:
+    """FAISS inner-product search over RAG chunks (vectors pre-normalised at index build time).
+
+    When bloom_level is set, searches top_k*10 candidates and post-filters to chunks whose
+    bloom_highest_level is at or below the selected level. Untagged chunks always pass through.
+    """
+    print("[RAG] bloom_level:", bloom_level)
     if faiss_index is None or not chunks:
         return []
     query_emb = _get_query_embedding(query)
     if query_emb is None:
         return []
+    
     q_norm = (query_emb / (np.linalg.norm(query_emb) + 1e-8)).astype(np.float32)
-    scores_arr, idx_arr = faiss_index.search(q_norm.reshape(1, -1), top_k)
-    return [
-        {
-            "source":  chunks[i].get("source", ""),
-            "content": chunks[i]["content"],
-            "score":   float(s),
-        }
-        for i, s in zip(idx_arr[0].tolist(), scores_arr[0].tolist())
-        if 0 <= i < len(chunks)
-    ]
+
+    max_order  = BLOOMS_ORDER.get(bloom_level, 6)
+    search_k   = min(top_k * 10, faiss_index.ntotal) if bloom_level else top_k
+    scores_arr, idx_arr = faiss_index.search(q_norm.reshape(1, -1), search_k)
+
+    results = []
+    for i, s in zip(idx_arr[0].tolist(), scores_arr[0].tolist()):
+        if not (0 <= i < len(chunks)):
+            continue
+        level = chunks[i].get("bloom_highest_level")
+        if level is None or BLOOMS_ORDER.get(level, 0) <= max_order:
+            print(f"[RAG] Candidate chunk bloom_level={level}")
+            results.append({
+                "source":  chunks[i].get("source", ""),
+                "content": chunks[i]["content"],
+                "score":   float(s),
+            })
+        if len(results) >= top_k:
+            break
+    return results

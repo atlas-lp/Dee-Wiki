@@ -66,6 +66,7 @@ def query_streaming(
     kb:          KnowledgeBase,
     wiki_client: LLMClient,
     main_client: LLMClient,
+    bloom_level: str | None = None,
 ):
     """
     Full dual-LLM query pipeline — streaming generator.
@@ -88,6 +89,7 @@ def query_streaming(
         chunks=chunks,
         faiss_index=faiss_index,
         client=main_client,
+        bloom_level=bloom_level,
     ):
         if event_type == "text":
             yield ("text", data)
@@ -104,11 +106,12 @@ def query(
     kb:          KnowledgeBase,
     wiki_client: LLMClient,
     main_client: LLMClient,
+    bloom_level: str | None = None,
 ) -> dict:
     """Blocking wrapper for the CLI REPL. Collects all streamed chunks."""
     answer_parts = []
     metadata     = {}
-    for event_type, data in query_streaming(user_query, kb, wiki_client, main_client):
+    for event_type, data in query_streaming(user_query, kb, wiki_client, main_client, bloom_level=bloom_level):
         if event_type == "text":
             answer_parts.append(data)
         elif event_type == "done":

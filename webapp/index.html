@@ -67,6 +67,18 @@
         <footer class="input-area">
             <form id="chat-form" onsubmit="handleSubmit(event)">
                 <div class="input-wrapper">
+                    <div class="bloom-filter">
+                        <label for="bloom-select">Level</label>
+                        <select id="bloom-select">
+                            <option value="">All</option>
+                            <option value="Remember">Remember</option>
+                            <option value="Understand">Understand</option>
+                            <option value="Apply">Apply</option>
+                            <option value="Analyze">Analyze</option>
+                            <option value="Evaluate">Evaluate</option>
+                            <option value="Create">Create</option>
+                        </select>
+                    </div>
                     <textarea id="message-input" placeholder="Ask a question..." rows="1" autofocus></textarea>
                     <input type="file" id="pdf-file-input" accept=".pdf" style="display:none;">
                     <button type="button" id="pdf-attach-btn" title="Attach PDF" onclick="document.getElementById('pdf-file-input').click()">

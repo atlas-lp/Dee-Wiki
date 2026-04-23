@@ -532,6 +532,31 @@ html:not(.dark-mode) .sun-icon { display: none; }
   outline-offset: 2px;
 }
 
+.bloom-filter {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px 0;
+  font-size: 12px;
+  color: var(--text-secondary);
+  flex: 0 0 100%;
+}
+
+.bloom-filter select {
+  background: var(--surface-color);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 2px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.bloom-filter select:focus {
+  border-color: var(--accent-color);
+}
+
 .pdf-chip {
   display: flex;
   align-items: center;

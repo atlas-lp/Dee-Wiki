@@ -33,10 +33,6 @@ _MAIN_LLM_TOOLS = [
                     "type":        "string",
                     "description": "Search query for the source library.",
                 },
-                "top_k": {
-                    "type":        "integer",
-                    "description": "Number of chunks to retrieve. Default 5.",
-                },
             },
             "required": ["query"],
         },
@@ -191,6 +187,7 @@ def run_main_llm_streaming(
     chunks:       list,
     faiss_index,
     client:       LLMClient,
+    bloom_level:  str | None = None,
 ):
     """
     Streaming generator for MAIN_LLM (answer agent).
@@ -269,7 +266,8 @@ def run_main_llm_streaming(
                     query=tc.input.get("query", user_query),
                     chunks=chunks,
                     faiss_index=faiss_index,
-                    top_k=tc.input.get("top_k", 7),
+                    top_k=tc.input.get("top_k", 4),
+                    bloom_level=bloom_level,
                 )
                 _rag_calls_made += 1
                 for r in rag_results:
