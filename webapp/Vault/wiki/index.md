@@ -828,3 +828,5 @@ Master catalog — 813 pages · last rebuilt 2026-04-21
 - [[stubs/stub-platform-structures|Platform Structures]] — This source is a lecture presentation (FRNT – Session 6 by Vishal K) covering platform-mediated business networks as the
 - [[stubs/stub-the-digital-matrix-new-rules-for-business-transformation-1|The Digital Matrix: New Rules for Business Transformation Through Technology]] — Written by Venkat Venkatraman, *The Digital Matrix* provides a strategic framework and practical step-by-step guide for 
 - [[stubs/stub-web-30-metaverse|Web 3.0 Metaverse]] — This source is a lecture/presentation by Vishal K from a "Frontier Tech – Session 3" series, covering the evolution of t
+
+- [[synthesized/ai-governance-decentralization-paradox|The AI Governance Paradox: Decentralizing Operations, Centralizing Accountability]] — synthesized from query

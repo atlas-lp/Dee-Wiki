@@ -10349,6 +10349,27 @@
         "digital-strategy"
       ],
       "path": "wiki\\synthesized\\web3-decentralization-paradox.md"
+    },
+    "ai-governance-decentralization-paradox": {
+      "type": "synthesized",
+      "title": "The AI Governance Paradox: Decentralizing Operations, Centralizing Accountability",
+      "aliases": [
+        "autonomous-ai-governance",
+        "operational-decentralization-accountability-centralization",
+        "ai-governance-mesh"
+      ],
+      "tags": [
+        "ai-governance",
+        "digital-transformation",
+        "autonomous-systems",
+        "architecture",
+        "trust",
+        "accountability",
+        "observability",
+        "complementarity",
+        "ecosystem-governance"
+      ],
+      "path": "wiki/synthesized/ai-governance-decentralization-paradox.md"
     }
   },
   "edges": [
@@ -21095,6 +21116,46 @@
     {
       "from": "web3-decentralization-paradox",
       "to": "digital-disruption-as-political-disruption",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "web3-decentralization-paradox",
+      "type": "extends"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "authentication-as-ecosystem-trust-infrastructure",
+      "type": "extends"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "technology-organization-policy-nexus",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "thinking-patterns",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "grassroots-technology-entrepreneurship-india",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "digital-disruption-as-political-disruption",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "financial-architecture-as-digital-transformation-barrier",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-governance-decentralization-paradox",
+      "to": "history-as-defamiliarization-engine",
       "type": "relates-to"
     }
   ]
