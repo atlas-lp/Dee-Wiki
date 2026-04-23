@@ -10370,6 +10370,31 @@
         "ecosystem-governance"
       ],
       "path": "wiki/synthesized/ai-governance-decentralization-paradox.md"
+    },
+    "adaptive-governance-mesh-architecture": {
+      "type": "synthesized",
+      "title": "The Adaptive Governance Mesh: How Causal Consistency, Adversarial Resistance, and Dynamic Reconfiguration Resolve into a Single Design Problem",
+      "aliases": [
+        "governance-mesh-architecture",
+        "adaptive-self-regulating-architecture",
+        "full-stack-ai-governance"
+      ],
+      "tags": [
+        "ai-governance",
+        "digital-transformation",
+        "autonomous-systems",
+        "architecture",
+        "causal-consistency",
+        "adversarial-resistance",
+        "event-driven-architecture",
+        "domain-driven-design",
+        "decision-architecture",
+        "human-oversight",
+        "accountability",
+        "authentication",
+        "trust"
+      ],
+      "path": "wiki/synthesized/adaptive-governance-mesh-architecture.md"
     }
   },
   "edges": [
@@ -21156,6 +21181,36 @@
     {
       "from": "ai-governance-decentralization-paradox",
       "to": "history-as-defamiliarization-engine",
+      "type": "relates-to"
+    },
+    {
+      "from": "adaptive-governance-mesh-architecture",
+      "to": "ai-governance-decentralization-paradox",
+      "type": "extends"
+    },
+    {
+      "from": "adaptive-governance-mesh-architecture",
+      "to": "warfare-c2-architecture-as-digital-transformation-problem",
+      "type": "extends"
+    },
+    {
+      "from": "adaptive-governance-mesh-architecture",
+      "to": "low-level-design-as-digital-transformation-substrate",
+      "type": "extends"
+    },
+    {
+      "from": "adaptive-governance-mesh-architecture",
+      "to": "web3-decentralization-paradox",
+      "type": "relates-to"
+    },
+    {
+      "from": "adaptive-governance-mesh-architecture",
+      "to": "authentication-as-ecosystem-trust-infrastructure",
+      "type": "extends"
+    },
+    {
+      "from": "adaptive-governance-mesh-architecture",
+      "to": "technology-organization-policy-nexus",
       "type": "relates-to"
     }
   ]
