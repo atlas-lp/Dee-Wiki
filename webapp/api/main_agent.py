@@ -206,7 +206,8 @@ def run_main_llm_streaming(
     metadata_mode   = False
     metadata_buf    = ""
     full_response   = ""
-    rag_sources_used: list = []
+    rag_sources_used:    list = []
+    rag_chunks_collected: list = []
 
     for _ in range(_MAX_RAG_CALLS + 1):
         current_tool_list = _MAIN_LLM_TOOLS if _rag_calls_made < _MAX_RAG_CALLS else None
@@ -274,6 +275,7 @@ def run_main_llm_streaming(
                     src = r.get("source", "")
                     if src and src not in rag_sources_used:
                         rag_sources_used.append(src)
+                    rag_chunks_collected.append(r)
                 tool_calls_to_run.append(tc)
                 results.append(json.dumps(rag_results, ensure_ascii=False))
 
@@ -308,4 +310,5 @@ def run_main_llm_streaming(
             "should_wiki_update": False,
         }
 
+    metadata["rag_chunks"] = rag_chunks_collected
     yield ("metadata", metadata)

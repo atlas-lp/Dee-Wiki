@@ -1,6 +1,6 @@
 # Wiki Index
 
-Master catalog — 813 pages · last rebuilt 2026-04-24
+Master catalog — 816 pages · last rebuilt 2026-04-24
 
 ## Persona Pages (8)
 
@@ -13,7 +13,7 @@ Master catalog — 813 pages · last rebuilt 2026-04-24
 - [[persona/technology-organization-policy-nexus|Technology, Organization, and Policy Nexus]] — Deepa Mani's research identity coalesces around a distinctive claim: technology, organization, and policy are not separa
 - [[persona/thinking-patterns|Thinking Patterns and Frameworks]] — Deepa Mani operates with a stable repertoire of named and nameable intellectual tools that recur across her research, te
 
-## Extracted Concepts (449)
+## Extracted Concepts (452)
 
 - [[concepts/1-click-ordering|1-Click Ordering]] — A feature pioneered by Amazon in 1997 that simplifies the online checkout process to a single action to improve conversi
 - [[concepts/3d-printing|3D Printing]] — A technology that enables on-demand, decentralized manufacturing of items ranging from surgical implants to tools, poten
@@ -199,6 +199,7 @@ Master catalog — 813 pages · last rebuilt 2026-04-24
 - [[concepts/freemium-model|Freemium Model]] — A business model that helps with user adoption and brand building by offering a basic version of a service for free.
 - [[concepts/freemium-strategy|Freemium Strategy]] — A business model that offers a basic product for free to quickly scale a user base for network effects, user feedback, o
 - [[concepts/freemium|Freemium]] — A strategy suitable for digital products that have almost zero marginal cost of production and distribution, contrasting
+- [[concepts/frontier-technologies|Frontier Technologies]] — A category of new and emerging technologies, such as Web 3.0 and the Metaverse, that present both limitless possibilitie
 - [[concepts/fulfillment-cost|Fulfillment Cost]] — A significant operational expense in fashion e-commerce, targeted for reduction from 18% of revenue to 10% in the long t
 - [[concepts/fulfillment-efficiency|Fulfillment Efficiency]] — A key operational goal aimed at reducing the percentage of revenue spent on fulfillment to improve overall profitability
 - [[concepts/future-of-work|Future of Work]] — A concept defined by the intersection of the nature of work, the workspace, and the workforce, which will be characteriz
@@ -218,6 +219,7 @@ Master catalog — 813 pages · last rebuilt 2026-04-24
 - [[concepts/horizontal-expertise|Horizontal Expertise]] — A characteristic of digital giants, representing core distinctive expertise that is extended across different scope doma
 - [[concepts/human-machine-augmentation|Human-Machine Augmentation]] — A principle of using powerful machines and smart technologies to bring out the best of a company's human talent, rather 
 - [[concepts/human-machine-collaboration|Human-Machine Collaboration]] — A powerful combination where human strategic guidance is paired with the tactical activity of a computer, described as p
+- [[concepts/hype-cycle|Hype Cycle]] — A concept relevant to emerging technologies that illustrates the limitations and error bars inherent in formulating any 
 - [[concepts/ict-closeness|ICT-Closeness]] — A concept that explains how being closer to the Information and Communication Technologies (ICT) industry transforms sec
 - [[concepts/implicit-association-test|Implicit Association Test]] — A test used by diversity consultants to reveal unconscious biases, such as the difficulty people have in linking women w
 - [[concepts/inclusion|Inclusion]] — The practice of fostering a culture that values different others, which is considered essential for diversity to be mean
@@ -255,6 +257,7 @@ Master catalog — 813 pages · last rebuilt 2026-04-24
 - [[concepts/learning-through-experimentation|Learning through Experimentation]] — The ultimate advantage gained at the nexus of scale-scope-speed, which involves using data and analytics to scientifical
 - [[concepts/learning|Learning]] — A sub-problem of AI which is the study of algorithms that improve automatically through experience.
 - [[concepts/legal-technology|Legal Technology (LegalTech)]] — The application of technology to the legal industry, including AI that can answer legal questions, databases that calcul
+- [[concepts/look-forward-reason-back|Look Forward / Reason Back]] — A framework for understanding the implications of new technologies like the metaverse for business and for formulating a
 - [[concepts/low-cost-producer-strategy|Low-Cost Producer Strategy]] — A traditional competitive strategy that focuses on being cheaper than competitors, typically requiring scale and operati
 - [[concepts/machine-learning|Machine Learning]] — An approach for training machines to do tasks by automatically learning from data to recognize patterns, rather than bei
 - [[concepts/market-myopia|Market Myopia]] — A phenomenon where investors undervalue a company undergoing a long-term transformation because its profits may temporar

@@ -19,6 +19,17 @@ from fastembed import TextEmbedding; \
 TextEmbedding('BAAI/bge-base-en-v1.5', cache_dir='/app/models')" \
   && echo "fastembed model cached."
 
+# Pre-build wiki search FAISS index so Cloud Run startup is instant.
+# Reads Vault/wiki/*.md, encodes with the cached fastembed model, and writes
+# data/wiki_search.faiss + data/wiki_search_slugs.json into the image.
+# After each wiki update that triggers a rebuild, this step re-encodes automatically.
+RUN python -c "\
+import sys; sys.path.insert(0, '/app/api'); \
+from kb import KnowledgeBase; \
+print('[Build] Pre-building wiki search FAISS index...'); \
+KnowledgeBase(); \
+print('[Build] Wiki FAISS cache ready.')"
+
 ENV PORT=8080
 EXPOSE 8080
 

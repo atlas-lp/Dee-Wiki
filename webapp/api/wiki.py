@@ -417,8 +417,7 @@ def _write_wiki_page(page_data: dict, kb: KnowledgeBase, original_query: str = "
         else:
             kb.wiki_pages.append(new_page_entry)
         kb.graph = graph
-
-    kb.wiki_search.add_or_update(new_page_entry)
+        kb.wiki_search.add_or_update(new_page_entry)
 
     # Update index.md — upsert so the same slug is never listed twice.
     new_index_content = None
@@ -450,7 +449,7 @@ def _write_wiki_page(page_data: dict, kb: KnowledgeBase, original_query: str = "
     except OSError:
         pass
 
-    vault_repo_path = str(VAULT.relative_to(PROJECT_ROOT)).replace("\\", "/")
+    vault_repo_path = f"{_GITHUB_BASE}/Vault"
     files_to_push = {
         f"{vault_repo_path}/wiki/synthesized/{slug}.md": content,
         f"{_GITHUB_BASE}/data/_graph.json":              graph_json,

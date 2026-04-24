@@ -93,17 +93,19 @@ def do_rag_search(
     When bloom_level is set, searches top_k*10 candidates and post-filters to chunks whose
     bloom_highest_level is at or below the selected level. Untagged chunks always pass through.
     """
-    print("[RAG] bloom_level:", bloom_level)
+    print(f"[RAG] bloom_level: {bloom_level}")
     if faiss_index is None or not chunks:
+        print("[RAG] WARNING: faiss_index is None or chunks empty — returning []")
         return []
     query_emb = _get_query_embedding(query)
     if query_emb is None:
+        print("[RAG] WARNING: embedding failed (Gemini API error?) — returning []")
         return []
-    
+
     q_norm = (query_emb / (np.linalg.norm(query_emb) + 1e-8)).astype(np.float32)
 
-    max_order  = BLOOMS_ORDER.get(bloom_level, 6)
-    search_k   = min(top_k * 10, faiss_index.ntotal) if bloom_level else top_k
+    max_order = BLOOMS_ORDER.get(bloom_level, 6)
+    search_k  = min(top_k * 10, faiss_index.ntotal) if bloom_level else top_k
     scores_arr, idx_arr = faiss_index.search(q_norm.reshape(1, -1), search_k)
 
     results = []
@@ -112,12 +114,17 @@ def do_rag_search(
             continue
         level = chunks[i].get("bloom_highest_level")
         if level is None or BLOOMS_ORDER.get(level, 0) <= max_order:
-            print(f"[RAG] Candidate chunk bloom_level={level}")
             results.append({
-                "source":  chunks[i].get("source", ""),
-                "content": chunks[i]["content"],
-                "score":   float(s),
+                "source":      chunks[i].get("source", ""),
+                "content":     chunks[i]["content"],
+                "score":       float(s),
+                "bloom_level": chunks[i].get("bloom_highest_level", ""),
             })
         if len(results) >= top_k:
             break
+
+    if not results:
+        print(f"[RAG] WARNING: 0 results returned (bloom_level={bloom_level}, searched {search_k} candidates, chunks={len(chunks)})")
+    else:
+        print(f"[RAG] {len(results)} results returned")
     return results

@@ -26,6 +26,7 @@ Examples:
 Path matching is case-insensitive and normalised to forward slashes.
 """
 
+import re
 import sys
 import json
 import shutil
@@ -43,13 +44,18 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 WEBAPP_DATA  = PROJECT_ROOT / "webapp" / "data"
 OFFLINE_DATA = PROJECT_ROOT / "data"
 
+# Mirror export_for_web.py: prefer chunks_tagged.json if it exists
+_tagged = OFFLINE_DATA / "chunks_tagged.json"
+OFFLINE_CHUNKS = _tagged if _tagged.exists() else OFFLINE_DATA / "chunks.json"
+
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
 
 def _norm(path: str) -> str:
-    return path.replace("\\", "/").lower()
+    result = path.replace("\\", "/").lower()
+    return re.sub(r'/{2,}', '/', result)
 
 
 def _classify(chunks, prefix):
@@ -79,14 +85,15 @@ def _print_summary(chunks, remove_idx, prefix):
 # ---------------------------------------------------------------------------
 
 def run_offline(prefix):
-    chunks_path = OFFLINE_DATA / "chunks.json"
+    chunks_path = OFFLINE_CHUNKS
+    rel = chunks_path.relative_to(PROJECT_ROOT).as_posix()
 
     if not chunks_path.exists():
         print(f"Error: {chunks_path} not found.")
         sys.exit(1)
 
     chunks = json.loads(chunks_path.read_text(encoding="utf-8"))
-    print(f"Loaded {len(chunks)} chunks from data/chunks.json")
+    print(f"Loaded {len(chunks)} chunks from {rel}")
 
     keep_idx, remove_idx = _classify(chunks, prefix)
 
@@ -111,13 +118,30 @@ def run_offline(prefix):
     kept = [chunks[i] for i in keep_idx]
     chunks_path.write_text(json.dumps(kept, indent=2), encoding="utf-8")
     size_mb = chunks_path.stat().st_size / 1024 / 1024
-    print(f"Saved {len(kept)} chunks → data/chunks.json  ({size_mb:.1f} MB)")
+    print(f"Saved {len(kept)} chunks → {rel}  ({size_mb:.1f} MB)")
+
+    # Remove matching entries from ingested.json so ingest.py won't skip the files
+    ingested_path = OFFLINE_DATA / "ingested.json"
+    if ingested_path.exists():
+        ingested = json.loads(ingested_path.read_text(encoding="utf-8"))
+        # Build set of normalised absolute sources that were removed
+        removed_sources = {_norm(chunks[i].get("source", "")) for i in remove_idx}
+        # ingested.json keys are relative (e.g. "raw/books/foo.md") — match by suffix
+        removed_keys = [
+            k for k in ingested
+            if any(src.endswith("/" + _norm(k)) or src == _norm(k) for src in removed_sources)
+        ]
+        for k in removed_keys:
+            del ingested[k]
+        if removed_keys:
+            ingested_path.write_text(json.dumps(ingested, indent=2), encoding="utf-8")
+            print(f"Removed {len(removed_keys)} entry(s) from ingested.json")
 
     print(f"\nDone. Removed {len(remove_idx)} chunk(s).")
     print("\nNext: rebuild webapp/data/ from the cleaned offline file (no re-embedding):")
     print("    python scripts/export_for_web.py")
     print("This reuses the stored embeddings — Gemini API is NOT called for existing chunks.")
-    print(f"\nTo restore backup:  copy data/{bak.name} data/chunks.json")
+    print(f"\nTo restore backup:  copy data/{bak.name} {rel}")
 
 
 # ---------------------------------------------------------------------------
@@ -226,7 +250,8 @@ def main():
 
     deployed = "--deployed" in flags
 
-    print(f"Mode           : {'--deployed (webapp/data/)' if deployed else '--offline (data/)'}")
+    offline_file = OFFLINE_CHUNKS.relative_to(PROJECT_ROOT).as_posix()
+    print(f"Mode           : {'--deployed (webapp/data/)' if deployed else f'--offline ({offline_file})'}")
     print(f"Source prefix  : {prefix!r}")
 
     if deployed:

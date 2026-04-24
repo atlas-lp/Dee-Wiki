@@ -3,6 +3,9 @@ type: concept
 aliases: [Web 1.0]
 tags: [web-paradigm, internet-history]
 sourced_from: Web 3.0   Metaverse
+relationships:
+  - target: web-2-0
+    type: preceded
 ---
 
 # Web 1.0

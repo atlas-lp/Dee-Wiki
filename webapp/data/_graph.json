@@ -10369,7 +10369,7 @@
         "complementarity",
         "ecosystem-governance"
       ],
-      "path": "wiki/synthesized/ai-governance-decentralization-paradox.md"
+      "path": "wiki\\synthesized\\ai-governance-decentralization-paradox.md"
     },
     "adaptive-governance-mesh-architecture": {
       "type": "synthesized",
@@ -10410,6 +10410,42 @@
         "strategic-framework"
       ],
       "path": "wiki/synthesized/digital-matrix-and-digital-transformation.md"
+    },
+    "frontier-technologies": {
+      "type": "concept",
+      "title": "Frontier Technologies",
+      "aliases": [
+        "Frontier Technologies"
+      ],
+      "tags": [
+        "technology",
+        "innovation"
+      ],
+      "path": "wiki\\concepts\\frontier-technologies.md"
+    },
+    "hype-cycle": {
+      "type": "concept",
+      "title": "Hype Cycle",
+      "aliases": [
+        "Hype Cycle"
+      ],
+      "tags": [
+        "technology-adoption",
+        "framework"
+      ],
+      "path": "wiki\\concepts\\hype-cycle.md"
+    },
+    "look-forward-reason-back": {
+      "type": "concept",
+      "title": "Look Forward / Reason Back",
+      "aliases": [
+        "Look Forward / Reason Back"
+      ],
+      "tags": [
+        "strategic-framework",
+        "technology-analysis"
+      ],
+      "path": "wiki\\concepts\\look-forward-reason-back.md"
     }
   },
   "edges": [
@@ -21252,6 +21288,56 @@
       "from": "digital-matrix-and-digital-transformation",
       "to": "the-digital-matrix",
       "type": "extends"
+    },
+    {
+      "from": "blockchain",
+      "to": "web-3-0",
+      "type": "is-foundational-to"
+    },
+    {
+      "from": "blockchain",
+      "to": "metaverse",
+      "type": "enables-ownership-in"
+    },
+    {
+      "from": "frontier-technologies",
+      "to": "web-3-0",
+      "type": "includes"
+    },
+    {
+      "from": "frontier-technologies",
+      "to": "metaverse",
+      "type": "includes"
+    },
+    {
+      "from": "hype-cycle",
+      "to": "frontier-technologies",
+      "type": "applies-to"
+    },
+    {
+      "from": "look-forward-reason-back",
+      "to": "frontier-technologies",
+      "type": "is-used-to-analyze"
+    },
+    {
+      "from": "metaverse",
+      "to": "meta-horizon-worlds",
+      "type": "is-exemplified-by"
+    },
+    {
+      "from": "web-1-0",
+      "to": "web-2-0",
+      "type": "preceded"
+    },
+    {
+      "from": "web-2-0",
+      "to": "web-3-0",
+      "type": "preceded"
+    },
+    {
+      "from": "index",
+      "to": "synthesized/ai-governance-decentralization-paradox",
+      "type": "references"
     }
   ]
 }

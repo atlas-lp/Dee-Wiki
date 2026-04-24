@@ -2,6 +2,8 @@
 type: concept
 aliases: [Metaverse]
 relationships:
+  - target: meta-horizon-worlds
+    type: is-exemplified-by
   - target: blockchain
     type: is_enabled_by
   - target: unreal-engine

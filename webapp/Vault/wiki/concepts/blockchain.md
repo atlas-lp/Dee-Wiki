@@ -2,6 +2,10 @@
 type: concept
 aliases: [Blockchain]
 relationships:
+  - target: web-3-0
+    type: is-foundational-to
+  - target: metaverse
+    type: enables-ownership-in
   - target: proof-of-work
     type: uses
   - target: consensus

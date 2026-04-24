@@ -2,6 +2,8 @@
 type: concept
 aliases: [Web 2.0]
 relationships:
+  - target: web-3-0
+    type: preceded
   - target: web-1-0
     type: is_successor_to
 tags: [web-paradigm, social-media]

@@ -14,12 +14,6 @@ added. Existing records are identified by:
 
 If output files do not exist they are created from scratch.
 
-IMPORTANT: This script only reads from local wiki/*.md files on disk.
-If there are query-synthesized pages in Redis that haven't been pulled yet,
-they will be MISSING from the export. Always run:
-
-    python scripts/sync_wiki.py --pull
-
 BEFORE running this script to ensure all pages are included.
 
 Usage:

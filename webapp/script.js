@@ -9,6 +9,8 @@ const sendBtn = document.getElementById("send-btn");
 const statusText = document.getElementById("status-text");
 const statusDot = document.querySelector(".status-dot");
 const themeToggle = document.getElementById("theme-toggle");
+const ragPanel = document.getElementById("rag-panel");
+const ragPanelBody = document.getElementById("rag-panel-body");
 
 let activeWikiPropose = null;
 
@@ -185,6 +187,8 @@ function handleSubmit(e) {
   const pdfToSend = attachedPDF;
   attachedPDF = null;
   removePDFChip();
+  ragPanelBody.innerHTML = "";
+  ragPanel.hidden = true;
   streamResponse(text, pdfToSend);
 }
 
@@ -210,7 +214,7 @@ function appendMessage(role, content) {
   msg.appendChild(bubble);
   chatContainer.appendChild(msg);
   scrollToBottom();
-  return bubble;
+  return msg;
 }
 
 // ---- Thinking indicator ----
@@ -277,7 +281,6 @@ function createStreamRenderer(bubble, onFinished) {
       const clean = stripWikiBlocks(revealedText);
       if (clean && !hasOpenMath(clean)) {
         renderMarkdown(bubble, clean);
-        scrollToBottom();
       }
     }, 80);
   }
@@ -306,7 +309,6 @@ function createStreamRenderer(bubble, onFinished) {
     const clean = stripWikiBlocks(revealedText);
     if (clean) {
       renderMarkdown(bubble, clean);
-      scrollToBottom();
     }
     // Called after innerHTML is written — safe to append to the DOM now.
     if (onFinished) onFinished();
@@ -433,6 +435,43 @@ async function submitWikiUpdate(metadata, originalQuery, userComment, pdfBase64 
 }
 
 
+const BLOOM_COLORS = {
+  Remember:   "#9ca3af",
+  Understand: "#3b82f6",
+  Apply:      "#22c55e",
+  Analyze:    "#f97316",
+  Evaluate:   "#ef4444",
+  Create:     "#a855f7",
+};
+
+function renderRagPanel(chunks) {
+  ragPanelBody.innerHTML = "";
+  chunks.forEach(chunk => {
+    const src = (chunk.source || "").split(/[\\/]/).pop() || chunk.source || "source";
+    const level = chunk.bloom_level || "";
+    const preview = (chunk.content || "").slice(0, 220).trimEnd();
+    const score = chunk.score != null ? (chunk.score * 100).toFixed(0) : null;
+
+    const card = document.createElement("div");
+    card.className = "rag-chunk-card";
+    card.innerHTML = `
+      <div class="rag-chunk-meta">
+        <span class="rag-source" title="${chunk.source || ""}">${src}</span>
+        ${score ? `<span class="rag-score">${score}%</span>` : ""}
+      </div>
+      ${level ? `<span class="rag-bloom-badge" style="background:${BLOOM_COLORS[level] || "#9ca3af"}">${level}</span>` : ""}
+      <p class="rag-chunk-preview">${preview}${chunk.content?.length > 220 ? "…" : ""}</p>
+      <div class="rag-chunk-full" hidden>${chunk.content || ""}</div>
+    `;
+    card.addEventListener("click", () => {
+      const expanded = card.classList.toggle("expanded");
+      card.querySelector(".rag-chunk-full").hidden = !expanded;
+    });
+    ragPanelBody.appendChild(card);
+  });
+  ragPanel.hidden = false;
+}
+
 async function streamResponse(userMessage, pdf = null) {
     isStreaming = true;
     sendBtn.disabled = true;
@@ -456,7 +495,7 @@ async function streamResponse(userMessage, pdf = null) {
                 message:     userMessage,
                 history:     conversationHistory.slice(-10),
                 pdf_base64:  pdf ? pdf.base64 : undefined,
-                bloom_level: document.getElementById("bloom-select")?.value || null,
+                bloom_level: document.getElementById("bloom-select")?.value || "Remember",
             }),
         });
 
@@ -472,8 +511,9 @@ async function streamResponse(userMessage, pdf = null) {
 
         removeThinking();
         setStatus("Responding...", true);
-        const bubble = appendMessage("bot", "");
-        const messageEl = bubble.parentNode; // .message wrapper — survives innerHTML resets
+        const messageEl = appendMessage("bot", "");
+        const bubble = messageEl.querySelector(".msg-body");
+        messageEl.scrollIntoView({ block: "start", behavior: "smooth" });
         bubble.classList.add("streaming");
         renderer = createStreamRenderer(bubble, () => {
             if (finalMetadata && finalMetadata.should_wiki_update) {
@@ -504,8 +544,11 @@ async function streamResponse(userMessage, pdf = null) {
                         renderer.push(parsed.text);
                     } 
                     // CAPTURE METADATA HERE
-                    else if (parsed.should_wiki_update) {
-                        finalMetadata = parsed; 
+                    else if (parsed.should_wiki_update !== undefined || parsed.rag_chunks !== undefined) {
+                        finalMetadata = parsed;
+                        if (parsed.rag_chunks?.length) {
+                            renderRagPanel(parsed.rag_chunks);
+                        }
                     }
                     else if (parsed.error) {
                         renderer.push(`\n\n**Error:** ${parsed.error}`);

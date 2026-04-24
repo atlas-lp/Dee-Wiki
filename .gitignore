@@ -20,6 +20,10 @@ build/
 # webapp/data/ is DEPLOYED to Vercel — do NOT ignore it
 # (chunks.json ~19MB text-only, chunks_embeddings.npy ~70MB, wiki_pages.json ~700KB)
 
+# Wiki search FAISS cache — rebuilt at Docker build time, not committed
+webapp/data/wiki_search.faiss
+webapp/data/wiki_search_slugs.json
+
 # Extracted markdown from PDFs (regenerate via ingest)
 Vault/raw/**/extracted_md/
 

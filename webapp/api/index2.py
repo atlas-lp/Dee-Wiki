@@ -157,11 +157,15 @@ def chat():
                     metadata = data
             
             # Debug: always log the metadata so we can see what the LLM returned.
-            print(f"[Server] Metadata received: should_wiki_update={metadata.get('should_wiki_update')} new_synthesis={metadata.get('new_synthesis', '')[:80]!r}")
-            # Send metadata to frontend so it can show the wiki update proposal UI.
+            print(f"[Server] Metadata received: should_wiki_update={metadata.get('should_wiki_update')} rag_chunks={len(metadata.get('rag_chunks', []))} new_synthesis={metadata.get('new_synthesis', '')[:80]!r}")
+            # Always send rag_chunks + wiki proposal (if any) to the frontend.
+            frontend_event = {"rag_chunks": metadata.get("rag_chunks", [])}
             if metadata.get("should_wiki_update"):
                 print(f"[Server] Proposing wiki update to frontend for: {user_message[:50]}...")
-                yield f"data: {json.dumps({'should_wiki_update': True, 'new_synthesis': metadata.get('new_synthesis', ''), 'sources': metadata.get('sources', {})})}\n\n"
+                frontend_event["should_wiki_update"] = True
+                frontend_event["new_synthesis"]      = metadata.get("new_synthesis", "")
+                frontend_event["sources"]             = metadata.get("sources", {})
+            yield f"data: {json.dumps(frontend_event)}\n\n"
 
         except Exception as exc:
             print(f"[chat] Error: {exc}")
