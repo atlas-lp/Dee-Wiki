@@ -456,16 +456,7 @@ def _write_wiki_page(page_data: dict, kb: KnowledgeBase, original_query: str = "
     }
     if new_index_content:
         files_to_push[f"{vault_repo_path}/wiki/index.md"] = new_index_content
-    if _WIKI_FAISS_CACHE.exists():
-        try:
-            files_to_push[f"{_GITHUB_BASE}/data/wiki_search.faiss"] = _WIKI_FAISS_CACHE.read_bytes()
-        except Exception as e:
-            print(f"[GitHub] Skipping FAISS binary: {e}")
-    if _WIKI_FAISS_SLUGS.exists():
-        try:
-            files_to_push[f"{_GITHUB_BASE}/data/wiki_search_slugs.json"] = _WIKI_FAISS_SLUGS.read_text(encoding="utf-8")
-        except Exception as e:
-            print(f"[GitHub] Skipping FAISS slugs: {e}")
+    # wiki_search.faiss is rebuilt at Docker build time — never push it.
 
     _push_batch_to_github(
         files=files_to_push,
