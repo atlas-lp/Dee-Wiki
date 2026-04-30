@@ -3481,31 +3481,6 @@
     "create_bkt_score": 0.1365
   },
   {
-    "id": "Outline & Introduction_chunk_0001",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\books\\Outline & Introduction.md",
-    "chunk_index": 1,
-    "content": "| # | Evaluation component",
-    "word_count": 5,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
-  },
-  {
     "id": "Outline & Introduction_chunk_0002",
     "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\books\\Outline & Introduction.md",
     "chunk_index": 2,
@@ -7719,31 +7694,6 @@
     "create_bkt_score": 0.2045
   },
   {
-    "id": "deepa-mani_knowledge_base_chunk_0031",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 31,
-    "content": "<!-- END: Dynamics_of_Diversity_-_Part_1_Inside_India_Ep_2_Prof_Deepa_Mani_Indian_School_o_U4-Ng2-7qf8.md -->",
-    "word_count": 4,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
-  },
-  {
     "id": "deepa-mani_knowledge_base_chunk_0032",
     "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
     "chunk_index": 32,
@@ -7826,56 +7776,6 @@
     "understand_bkt_score": 0.4388,
     "analyze_bkt_score": 0.2349,
     "create_bkt_score": 0.3263
-  },
-  {
-    "id": "deepa-mani_knowledge_base_chunk_0035",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 35,
-    "content": "<!-- END: Dynamics_of_Diversity_-_Part_2_Inside_India_Ep_3_Prof_Deepa_Mani_Indian_School_o_aWG4ne-5eR4.md -->",
-    "word_count": 4,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
-  },
-  {
-    "id": "deepa-mani_knowledge_base_chunk_0036",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 36,
-    "content": "<!-- START: Future_of_Digital_Transformation_by_Professor_Deepa_Mani_PGPpro_NU6j_3uZgik.md -->\n# Future of Digital Transformation by Professor Deepa Mani (PGPpro)\n\n**Channel:** ISB Admissions   |   **Date:** 2020-03-31   |   **URL:** https://www.youtube.com/watch?v=NU6j_3uZgik\n\n## Description\n\n_No description provided._\n\n## Transcript",
-    "word_count": 30,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
   },
   {
     "id": "deepa-mani_knowledge_base_chunk_0037",
@@ -8266,31 +8166,6 @@
     "create_bkt_score": 0.0132
   },
   {
-    "id": "deepa-mani_knowledge_base_chunk_0051",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 51,
-    "content": "<!-- END: Future_of_Digital_Transformation_by_Professor_Deepa_Mani_PGPpro_NU6j_3uZgik.md -->",
-    "word_count": 4,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
-  },
-  {
     "id": "deepa-mani_knowledge_base_chunk_0052",
     "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
     "chunk_index": 52,
@@ -8370,31 +8245,6 @@
     "understand_bkt_score": 0.5132,
     "analyze_bkt_score": 0.211,
     "create_bkt_score": 0.2758
-  },
-  {
-    "id": "deepa-mani_knowledge_base_chunk_0055",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 55,
-    "content": "<!-- END: How_to_befriend_tech_for_innovation_Professors_Deepa_Mani_and_Anand_Nandkumar_IS_1rxbpDR-SrQ.md -->",
-    "word_count": 4,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
   },
   {
     "id": "deepa-mani_knowledge_base_chunk_0056",
@@ -8478,31 +8328,6 @@
     "understand_bkt_score": 0.005,
     "analyze_bkt_score": 0.6478,
     "create_bkt_score": 0.3472
-  },
-  {
-    "id": "deepa-mani_knowledge_base_chunk_0059",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 59,
-    "content": "<!-- END: Knowledge_in_Practice_How_ICT_Adoption_Impacts_Industry_Innovation_-_Deepa_Mani_nBXjvn8kfaw.md -->",
-    "word_count": 4,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
   },
   {
     "id": "deepa-mani_knowledge_base_chunk_0060",
@@ -8674,31 +8499,6 @@
     "create_bkt_score": 0.3783
   },
   {
-    "id": "deepa-mani_knowledge_base_chunk_0066",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 66,
-    "content": "<!-- END: NISC2020_Dr_Deepa_Mani_ISB_on_Covid-19_and_SMEs_A_Roadmap_for_Growth_segAEe9CcYA.md -->",
-    "word_count": 4,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
-  },
-  {
     "id": "deepa-mani_knowledge_base_chunk_0067",
     "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
     "chunk_index": 67,
@@ -8759,31 +8559,6 @@
     "chunk_index": 69,
     "content": "the um gr heart which was recently uh you know in news a lot of initiatives both um across the country which have garnered a lot of attention and this is a perfect place to study some of those issues Sydney has done some very good things in the last few years we've hired some quality people who are driving a very uh futuristic agenda for the center as well as for the school we've have formal interactions set up with uh industry we have formal research programs for instance a new collaboratory initiative that we've signed with IBM that the school has signed with IBM all of these are part of um part of the ISB Advantage I think in delivering top quality research and information systems and we and also the students for instance we find there is a lot of interest in in certain U areas of uh technology and it's a great place for I think the interactions with the students gives us a lot of feedback on also how to drive this agenda forward uh well for all these reasons I think ISB rocks it's it's a world-class institution uh with worldclass infrastructure world-class students worldclass researchers and worldclass teaching Talent um I think we are poised to grow we've evidenced that in more recent years and uh for all of these reasons I think it's a very exciting place to be it's definitely a place to be in the future",
     "word_count": 246,
-    "type": "rag",
-    "bloom_highest_level": "Remember",
-    "bloom_bucket": "understand_bkt",
-    "bloom_predicted_labels": [
-      "Remember"
-    ],
-    "bloom_confidences": {
-      "Remember": 0.0,
-      "Understand": 0.0,
-      "Apply": 0.0,
-      "Analyze": 0.0,
-      "Evaluate": 0.0,
-      "Create": 0.0
-    },
-    "bloom_sentence_count": 0,
-    "understand_bkt_score": 0.0,
-    "analyze_bkt_score": 0.0,
-    "create_bkt_score": 0.0
-  },
-  {
-    "id": "deepa-mani_knowledge_base_chunk_0070",
-    "source": "E:\\Internship-Folder\\Prof. Dee\\webapp\\Vault\\raw\\profile\\deepa-mani_knowledge_base.md",
-    "chunk_index": 70,
-    "content": "<!-- END: Prof_Deepa_Mani_talks_about_the_evolution_of_IT_industry_ISB_Faculty_Viewpoint_LF1Vp3hyDgM.md -->",
-    "word_count": 4,
     "type": "rag",
     "bloom_highest_level": "Remember",
     "bloom_bucket": "understand_bkt",
