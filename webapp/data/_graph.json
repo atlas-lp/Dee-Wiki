@@ -10446,6 +10446,27 @@
         "technology-analysis"
       ],
       "path": "wiki\\concepts\\look-forward-reason-back.md"
+    },
+    "ai-transformation-strategy-legacy-enterprise": {
+      "type": "synthesized",
+      "title": "AI Transformation Strategy for Legacy Enterprises: Governance, Data Unification, and Adoption",
+      "aliases": [
+        "enterprise-ai-modernization",
+        "legacy-to-ai-transformation",
+        "ai-adoption-strategy"
+      ],
+      "tags": [
+        "digital-transformation",
+        "ai-governance",
+        "change-management",
+        "legacy-systems",
+        "data-strategy",
+        "measurement",
+        "employee-adoption",
+        "complementarity",
+        "technology-organization-policy-nexus"
+      ],
+      "path": "wiki/synthesized/ai-transformation-strategy-legacy-enterprise.md"
     }
   },
   "edges": [
@@ -21338,6 +21359,46 @@
       "from": "index",
       "to": "synthesized/ai-governance-decentralization-paradox",
       "type": "references"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "ai-governance-decentralization-paradox",
+      "type": "extends"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "technology-organization-policy-nexus",
+      "type": "extends"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "thinking-patterns",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "rhetorical-style-and-pedagogy",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "intellectual-evolution",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "history-as-defamiliarization-engine",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "warfare-c2-architecture-as-digital-transformation-problem",
+      "type": "relates-to"
+    },
+    {
+      "from": "ai-transformation-strategy-legacy-enterprise",
+      "to": "web3-decentralization-paradox",
+      "type": "relates-to"
     }
   ]
 }
