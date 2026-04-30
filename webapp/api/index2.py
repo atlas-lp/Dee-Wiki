@@ -190,6 +190,7 @@ def health():
         n_pages  = len(kb.wiki_pages)
         n_chunks = len(kb.chunks)
         n_nodes  = len(kb.graph.get("nodes", {}))
+    github_ok = bool(os.environ.get("GITHUB_TOKEN") and os.environ.get("GITHUB_REPO"))
     return jsonify({
         "status":      "ok",
         "model_llm1":  WIKI_LLM_MODEL,
@@ -197,6 +198,7 @@ def health():
         "wiki_pages":  n_pages,
         "rag_chunks":  n_chunks,
         "graph_nodes": n_nodes,
+        "github_push": github_ok,
     })
 
 

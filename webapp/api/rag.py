@@ -62,13 +62,14 @@ def _get_query_embedding(query: str):
         f"models/{EMBED_MODEL}:embedContent?key={gemini_key}"
     )
     payload = {"content": {"parts": [{"text": QUERY_PREFIX + query}]}}
-    try:
-        resp = requests.post(url, json=payload, timeout=10)
-        resp.raise_for_status()
-        return np.array(resp.json()["embedding"]["values"], dtype=np.float32)
-    except Exception as e:
-        print(f"[Embed] Query embedding failed: {e}")
-        return None
+    for attempt in range(2):
+        try:
+            resp = requests.post(url, json=payload, timeout=20)
+            resp.raise_for_status()
+            return np.array(resp.json()["embedding"]["values"], dtype=np.float32)
+        except Exception as e:
+            print(f"[Embed] Query embedding failed (attempt {attempt+1}): {e}")
+    return None
 
 
 # ---------------------------------------------------------------------------

@@ -227,6 +227,7 @@ def _push_batch_to_github(files: dict, commit_msg: str):
     token = os.environ.get("GITHUB_TOKEN", "")
     repo  = os.environ.get("GITHUB_REPO",  "")
     if not token or not repo:
+        print("[GitHub] SKIPPED — GITHUB_TOKEN or GITHUB_REPO not set. Wiki changes NOT persisted to GitHub.")
         return
 
     api     = f"https://api.github.com/repos/{repo}"
@@ -433,8 +434,8 @@ def _write_wiki_page(page_data: dict, kb: KnowledgeBase, original_query: str = "
                 )
             else:
                 index_text += f"\n- [[synthesized/{slug}|{title}]] — synthesized from query\n"
+            new_index_content = index_text  # set before disk write so push always happens
             INDEX_MD_PATH.write_text(index_text, encoding="utf-8")
-            new_index_content = index_text
     except OSError:
         pass
 
@@ -443,9 +444,11 @@ def _write_wiki_page(page_data: dict, kb: KnowledgeBase, original_query: str = "
         f"- Pages created: {out_path.name}\n"
         f"- From query: {original_query}\n"
     )
+    new_log_content = None
     try:
-        with open(LOG_MD_PATH, "a", encoding="utf-8") as f:
-            f.write(log_entry)
+        existing_log = LOG_MD_PATH.read_text(encoding="utf-8") if LOG_MD_PATH.exists() else ""
+        new_log_content = existing_log + log_entry
+        LOG_MD_PATH.write_text(new_log_content, encoding="utf-8")
     except OSError:
         pass
 
@@ -456,6 +459,8 @@ def _write_wiki_page(page_data: dict, kb: KnowledgeBase, original_query: str = "
     }
     if new_index_content:
         files_to_push[f"{vault_repo_path}/wiki/index.md"] = new_index_content
+    if new_log_content:
+        files_to_push[f"{vault_repo_path}/wiki/log.md"] = new_log_content
     # wiki_search.faiss is rebuilt at Docker build time — never push it.
 
     _push_batch_to_github(
