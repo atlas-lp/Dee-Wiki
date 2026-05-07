@@ -2,7 +2,7 @@
 webapp/api/main_agent.py — MAIN_LLM answer agent.
 
 Contains: prompts, tool schema, message builders, and the streaming
-generator run_main_llm_streaming (the Dee persona / answer synthesiser).
+generator run_main_llm_streaming (the Gene persona / answer synthesiser).
 """
 
 import json

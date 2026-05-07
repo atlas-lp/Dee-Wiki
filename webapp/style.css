@@ -589,6 +589,59 @@ html:not(.dark-mode) .sun-icon { display: none; }
   opacity: 0.75;
 }
 
+.filter-divider {
+  width: 1px;
+  height: 14px;
+  background: var(--border-color);
+  margin: 0 6px;
+  flex-shrink: 0;
+}
+
+.wiki-toggle-inline {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.pill-toggle {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.pill-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.pill-track {
+  width: 28px;
+  height: 16px;
+  background: var(--border-color);
+  border-radius: 8px;
+  transition: background 0.2s;
+  position: relative;
+}
+
+.pill-track::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.pill-toggle input:checked + .pill-track { background: var(--accent-color); }
+.pill-toggle input:checked + .pill-track::after { transform: translateX(12px); }
+
 .pdf-chip {
   display: flex;
   align-items: center;

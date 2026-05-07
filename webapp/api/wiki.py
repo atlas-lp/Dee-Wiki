@@ -110,11 +110,14 @@ You are the wiki maintenance agent. Output raw JSON only — no markdown, no exp
 Related pages are in <related_pages>. If one already covers this insight, set "action":"update" and use its slug. Otherwise "action":"create" with a new kebab-case slug.
 
 Output this exact structure:
-{"action":"create","slug":"kebab-case-slug","title":"Human Readable Title","type":"synthesized","tags":["tag1"],"aliases":[],"relationships":[{"target":"related-slug","type":"extends"}],"body":"Full markdown body. No frontmatter."}
+{"action":"create","slug":"kebab-case-slug","title":"Human Readable Title","type":"synthesized","tags":["tag1"],"aliases":[],"relationships":[{"target":"related-slug","type":"extends"}],"body":"## Overview\\n\\nSubstantive paragraph...\\n\\n## Key Insights\\n\\nSubstantive paragraph...\\n\\n## Applications or Implications\\n\\nSubstantive paragraph..."}
 
 Rules:
 - slug: lowercase kebab-case, no spaces, no .md
-- body: escape all quotes and newlines properly for JSON (\\n not literal newlines inside the string)
+- body: rich markdown — minimum 3 `##` sections with substantive prose paragraphs (not bullet lists).
+  Use headings appropriate to the content, e.g. Overview, Key Insights, How It Works, Applications, Implications, Limitations.
+  Ground every claim in the synthesis provided — do not invent content.
+- body string: escape all newlines as \\n and all quotes properly for valid JSON
 - relationships: only slugs that exist in <related_pages>
 - Output nothing outside the JSON object\
 """

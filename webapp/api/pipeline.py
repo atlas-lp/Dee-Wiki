@@ -16,6 +16,7 @@ def _pipeline_setup(
     kb:          KnowledgeBase,
     wiki_client: LLMClient,
     main_client: LLMClient = None,
+    use_wiki:    bool = True,
 ):
     """
     Snapshot KB state and run the WIKI_LLM navigation pass.
@@ -38,14 +39,18 @@ def _pipeline_setup(
 
     page_by_slug = {p["slug"]: p for p in wiki_pages}
 
-    wiki_result = run_wiki_llm(
-        user_query=user_query,
-        wiki_search=wiki_search,
-        page_by_slug=page_by_slug,
-        graph=graph,
-        client=wiki_client,
-    )
-    print(f"[WikiLLM] selected slugs: {wiki_result.get('selected_slugs')} | sufficient={wiki_result.get('sufficient')}")
+    if use_wiki:
+        wiki_result = run_wiki_llm(
+            user_query=user_query,
+            wiki_search=wiki_search,
+            page_by_slug=page_by_slug,
+            graph=graph,
+            client=wiki_client,
+        )
+        print(f"[WikiLLM] selected slugs: {wiki_result.get('selected_slugs')} | sufficient={wiki_result.get('sufficient')}")
+    else:
+        wiki_result = {"sufficient": False, "selected_slugs": [], "note": "Wiki disabled."}
+        print("[WikiLLM] skipped (use_wiki=False)")
 
     selected_pages = []
     for slug in wiki_result.get("selected_slugs", []):
@@ -67,6 +72,7 @@ def query_streaming(
     wiki_client: LLMClient,
     main_client: LLMClient,
     bloom_level: str | None = None,
+    use_wiki:    bool = True,
 ):
     """
     Full dual-LLM query pipeline — streaming generator.
@@ -76,7 +82,7 @@ def query_streaming(
         ("done", dict)  — final metadata after stream ends (internal)
     """
     selected_pages, wiki_result, chunks, faiss_index = _pipeline_setup(
-        user_query, kb, wiki_client
+        user_query, kb, wiki_client, use_wiki=use_wiki
     )
     sufficient = wiki_result.get("sufficient", False)
     metadata   = {}
@@ -107,11 +113,12 @@ def query(
     wiki_client: LLMClient,
     main_client: LLMClient,
     bloom_level: str | None = None,
+    use_wiki:    bool = True,
 ) -> dict:
     """Blocking wrapper for the CLI REPL. Collects all streamed chunks."""
     answer_parts = []
     metadata     = {}
-    for event_type, data in query_streaming(user_query, kb, wiki_client, main_client, bloom_level=bloom_level):
+    for event_type, data in query_streaming(user_query, kb, wiki_client, main_client, bloom_level=bloom_level, use_wiki=use_wiki):
         if event_type == "text":
             answer_parts.append(data)
         elif event_type == "done":

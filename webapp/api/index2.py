@@ -132,6 +132,7 @@ def chat():
 
     pdf_b64     = data.get("pdf_base64", "")
     bloom_level = data.get("bloom_level") or None
+    use_wiki    = data.get("use_wiki", True)
     kb          = _get_kb()
 
     def generate():
@@ -149,7 +150,7 @@ def chat():
                     _pdf_err_msg = json.dumps({"text": "*(PDF extraction failed — answering without it.)*\n\n"})
                     yield f"data: {_pdf_err_msg}\n\n"
 
-            for event_type, data in query_streaming(user_message, kb, wiki_client, main_client, bloom_level=bloom_level):
+            for event_type, data in query_streaming(user_message, kb, wiki_client, main_client, bloom_level=bloom_level, use_wiki=use_wiki):
                 if event_type == "text":
                     yield f"data: {json.dumps({'text': data})}\n\n"
                 elif event_type == "done":

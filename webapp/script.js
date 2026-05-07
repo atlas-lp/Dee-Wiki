@@ -496,6 +496,7 @@ async function streamResponse(userMessage, pdf = null) {
                 history:     conversationHistory.slice(-10),
                 pdf_base64:  pdf ? pdf.base64 : undefined,
                 bloom_level: document.getElementById("bloom-select")?.value || "Remember",
+                use_wiki:    document.getElementById("use-wiki-toggle")?.checked !== false,
             }),
         });
 
